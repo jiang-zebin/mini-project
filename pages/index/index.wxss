@@ -1,0 +1,164 @@
+.search-box{
+  position:relative;
+}
+.search-input{
+  border-radius:10rpx;
+  height:15rpx;
+  font-size:14px;
+  margin:10rpx;
+  background-color:#ddd;
+  padding-left:50rpx;
+}
+.search-icon{
+  position:absolute;
+  width:30rpx;
+  height:30rpx;
+  top:13rpx;
+  left:25rpx;
+}
+.shop-swiper,.swiper-item,.swiper-item image{
+  width:100%;
+  height:350rpx;
+}
+.product-nav{
+  display:flex;
+  justify-content:center;
+  margin-top:30rpx;
+}
+.product-item{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:110rpx;
+  margin:0 20rpx;
+}
+.product-item image{
+  width:70rpx;
+  height:70rpx;
+}
+.product-item text{
+  font-size:10px;
+  color:#666;
+  margin-top:10rpx;
+}
+.news-box{
+  display:flex;
+  justify-content:center;
+}
+.news-left,.news-right{
+  height:330rpx;
+  margin:20rpx 10rpx 0;
+}
+.news-left{
+  width:480rpx;
+  overflow:hidden;
+  border-radius:10rpx;
+  position:relative;
+}
+.news-left image{
+  width:100%;
+  height:100%;
+}
+.left-info{
+  position:absolute;
+  bottom:40rpx;
+  left:0;
+  padding:10rpx;
+}
+.left-info image{
+  width:35rpx;
+  height:35rpx;
+  margin-right:10rpx;
+  vertical-align:middle;
+}
+.left-info text{
+  font-size:14px;
+  font-weight:bold;
+  color:#DAB68A;
+}
+.left-info-title{
+  position:absolute;
+  left:0;
+  bottom:0;
+  font-size:16px;
+  color:#eee;
+  padding:10rpx;
+}
+.news-right{
+  display:flex;
+  justify-content:space-between;
+  flex-direction:column;
+  align-items:center;
+  width:180rpx;
+}
+.news-right image{
+  width:100%;
+  height:108%;
+}
+.right-info{
+  position:absolute;
+  bottom:25rpx;
+  left:0;
+  padding:8rpx;
+}
+.right-info image{
+  width:25rpx;
+  height:25rpx;
+  margin-right:5rpx;
+  vertical-align:middle;
+}
+.right-info text{
+  font-size:10px;
+  font-weight:bold;
+  color:#DAB68A;
+}
+.right-info-title{
+  position:absolute;
+  left:0;
+  bottom:0;
+  font-size:12px;
+  color:#eee;
+  padding:8rpx;
+}
+.right-up,.right-down{
+  width:180rpx;
+  height:155rpx;
+  overflow:hidden;
+  border-radius:10rpx;
+  position:relative;
+}
+.recom-box{
+  margin-top:20rpx;
+}
+.recom-item{
+  position:relative;
+  width:91%;
+  height:200rpx;
+  margin:20rpx auto;
+  overflow:hidden;
+  border-radius:10rpx;
+}
+.recom-item image{
+  width:100%;
+}
+.recom-info{
+  position:absolute;
+  top:50rpx;
+  left:20rpx;
+}
+.recom-title{
+  font-size:16px;
+  color:#DAB68A;
+}
+.recom-item .recom-price image{
+  width:20rpx;
+  height:20rpx;
+  vertical-align:middle;
+  margin-right:10rpx;
+}
+.recom-item .recom-price text{
+  color:#DAB68A;
+  font-size:12px;
+  margin-right:20rpx;
+}

@@ -1,0 +1,144 @@
+<view class="search-box">
+  <input class="search-input" placeholder="请输入您想查找的商品"></input>
+  <image src="/assets/icon/search_icon@2x.png" mode="aspectFill" class="search-icon"/>
+</view>
+<swiper autoplay interval="4000" duration="700" indicator-dots="{{true}}" indicator-color="#666" indicator-active-color="white" class="shop-swiper">
+  <swiper-item class="swiper-item">
+    <image src="/assets/image/big157001.jpg" mode="aspectFill" lazy-load/>
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <image src="/assets/image/big157002.jpg" mode="aspectFill" lazy-load/>
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <image src="/assets/image/big157003.jpg" mode="aspectFill" lazy-load/>
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <image src="/assets/image/big157009.jpg" mode="aspectFill" lazy-load/>
+  </swiper-item>
+</swiper>
+<view class="product-nav">
+  <navigator class="product-item">
+    <image src="/assets/icon/mobile_store_func_hero_mark@2x.png" mode="aspectFill" lazy-load/>
+    <text>英雄</text>
+  </navigator>
+  <navigator class="product-item">
+    <image src="/assets/icon/mobile_store_func_skin_mark@2x.png" mode="aspectFill" lazy-load/>
+    <text>皮肤</text>
+  </navigator>
+  <navigator class="product-item">
+    <image src="/assets/icon/mobile_store_func_guard_mark@2x.png" mode="aspectFill" lazy-load/>
+    <text>守卫/图标</text>
+  </navigator>
+  <navigator class="product-item">
+    <image src="/assets/icon/mobile_store_func_gift_mark@2x.png" mode="aspectFill" lazy-load/>
+    <text>礼包</text>
+  </navigator>
+  <navigator class="product-item">
+    <image src="/assets/icon/mobile_store_func_periphery@2x.png" mode="aspectFill" lazy-load/>
+    <text>周边</text>
+  </navigator>
+</view>
+<view class="underline"></view>
+<view class="box-title arrow">最新上架</view>
+<view class="news-box">
+  <navigator class="news-left">
+    <image src="/assets/image/2018-10-23_191431.png" mode="aspectFill" lazy-load/>
+    <view class="left-info">
+      <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load/>
+      <text>9900</text>
+    </view>
+    <view class="left-info-title">兔女郎 锐雯</view>
+  </navigator>
+  <view class="news-right">
+    <navigator class="right-up">
+      <image src="/assets/image/2018-10-23_191527.png" mode="aspectFill" lazy-load/>
+      <view class="right-info">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load/>
+        <text>12900</text>
+      </view>
+      <view class="right-info-title">冠军之刃 锐雯</view>
+    </navigator>
+    <navigator class="right-down">
+      <image src="/assets/image/2018-10-23_191546.png" mode="aspectFill" lazy-load/>
+      <view class="right-info">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load/>
+        <text>6900</text>
+      </view>
+      <view class="right-info-title">冲击之刃 劫</view>
+    </navigator>
+  </view>
+</view>
+<view class="underline"></view>
+<view class="box-title arrow">推荐英雄</view>
+<view class="recom-box">
+  <navigator class="recom-item">
+    <image src="/assets/image/big92000.jpg" mode="aspectFill" lazy-load/>
+    <view class="recom-info">
+      <text class="recom-title">放逐之刃 锐雯</text>
+      <view class="recom-price">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+        <text>4500</text>
+        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+        <text>6300</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="recom-item">
+    <image src="/assets/image/big157000.jpg" mode="aspectFill" lazy-load/>
+    <view class="recom-info">
+      <text class="recom-title">疾风剑豪 亚索</text>
+      <view class="recom-price">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+        <text>4500</text>
+        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+        <text>6300</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="recom-item">
+    <image src="/assets/image/big238000.jpg" mode="aspectFill" lazy-load/>
+    <view class="recom-info">
+      <text class="recom-title">影流之主 劫</text>
+      <view class="recom-price">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+        <text>4500</text>
+        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+        <text>6300</text>
+      </view>
+    </view>
+  </navigator>
+</view>
+<view class="underline"></view>
+<view class="box-title arrow">推荐皮肤</view>
+<view class="recom-box">
+  <navigator class="recom-item">
+    <image src="/assets/image/big92016.jpg" mode="aspectFill" lazy-load/>
+    <view class="recom-info">
+      <text class="recom-title">黎明使者 锐雯</text>
+      <view class="recom-price">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+        <text>9900</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="recom-item">
+    <image src="/assets/image/big157009.jpg" mode="aspectFill" lazy-load/>
+    <view class="recom-info">
+      <text class="recom-title">黑夜使者 亚索</text>
+      <view class="recom-price">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+        <text>9900</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="recom-item">
+    <image src="/assets/image/big238010.jpg" mode="aspectFill" lazy-load/>
+    <view class="recom-info">
+      <text class="recom-title">冠军之影 劫</text>
+      <view class="recom-price">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+        <text>6900</text>
+      </view>
+    </view>
+  </navigator>
+</view>

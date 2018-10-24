@@ -1,0 +1,28 @@
+.box-title{
+  border-left:10rpx solid #043653;
+  font-size:13px;
+  color:#333;
+  padding-left:10rpx;
+  margin:0 36rpx;
+}
+.arrow{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.arrow:after{
+  content:"";
+  width:15rpx;
+  height:15rpx;
+  border-top:3rpx solid #aaa;
+  border-right:3rpx solid #aaa;
+  transform:rotate(45deg);
+}
+.underline:after{
+  display:block;
+  content:"";
+  width:92%;
+  height:1rpx;
+  background-color:#ccc;
+  margin:20rpx auto;
+}

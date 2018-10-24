@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/info/info"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#043653",
+    "navigationBarTitleText": "英雄联盟",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#BA9A6C",
+    "color": "#798A8C",
+    "borderStyle": "#798A8C",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "游戏商城",
+        "iconPath": "assets/icon/tab_icon_mobile_store_normal@2x.png",
+        "selectedIconPath": "assets/icon/tab_icon_mobile_store_press@2x.png"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "text": "游戏资料",
+        "iconPath": "assets/icon/tab_icon_news_normal@2x.png",
+        "selectedIconPath": "assets/icon/tab_icon_news_press@2x.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人中心",
+        "iconPath": "assets/icon/tab_icon_more_normal@2x.png",
+        "selectedIconPath": "assets/icon/tab_icon_more_press@2x.png"
+      }
+    ]
+  }
+}

@@ -1,7 +1,56 @@
 <view class="header">
   <image class="header-bg" src="/assets/icon/friend_cycle_main_header_bg@2x.jpg" mode="aspectFill" lazy-load/>
   <view class="header-bg-bg"></view>
+  <image class="set-btn" src="/assets/icon/expresstion_set@2x.png" mode="aspectFill" lazy-load/>
   <image class="avator-bd" src="/assets/icon/personal_content_battle_head_bg@2x.png" mode="aspectFill" lazy-load/>
   <image class="avator-img" src="/assets/image/chat_room_push_news_default_header@2x.png"  mode="aspectFill" lazy-load/>
   <text class="user-name">用户名称</text>
+</view>
+<view class="info">
+  <view class="info-nav">
+    <text class="nav-item active">战绩</text>
+    <text class="nav-item">能力</text>
+    <text class="nav-item">资产</text>
+  </view>
+  <view class="info-detail">
+    <view class="detail-left">
+      <image src="/assets/icon/personal_stage_5@2x.png" mode="aspectFill" lazy-load/>
+      <text>璀璨钻石I</text>
+    </view>
+    <view class="detail-right">
+      <view class="right-up">
+        <text>总局数 3411</text>
+        <text>胜率 60%</text>
+      </view>
+      <view class="right-down">
+        <view>
+          <image src="/assets/icon/personal_honor_type_god_like@2x.png" mode="aspectFill" lazy-load/>
+          <text>258次</text>
+          <text>超神</text>
+        </view>
+        <view>
+          <image src="/assets/icon/personal_honor_type_penta_kill@2x.png" mode="aspectFill" lazy-load/>
+          <text>2次</text>
+          <text>五杀</text>
+        </view>
+        <view>
+          <image src="/assets/icon/personal_honor_type_ultra_kill@2x.png" mode="aspectFill" lazy-load/>
+          <text>22次</text>
+          <text>四杀</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="divider"></view>
+<view class="task">
+  <text>游戏任务(17)</text>
+  <image src="/assets/icon/news_card_list_arrow@2x 拷贝.png" mode="aspectFill" lazy-load/>
+</view>
+<view class="game-score">
+  <view class="game-all">
+    <text>全部战绩</text>
+    <image src="/assets/icon/personal_battle_down_arrow_normal@2x.png" mode="aspectFill" lazy-load/>
+    <image src="/assets/icon/personal_win_3@2x.png" mode="aspectFill" lazy-load/>
+  </view>
 </view>

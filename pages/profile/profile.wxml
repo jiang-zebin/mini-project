@@ -45,12 +45,73 @@
 <view class="divider"></view>
 <view class="task">
   <text>游戏任务(17)</text>
-  <image src="/assets/icon/news_card_list_arrow@2x 拷贝.png" mode="aspectFill" lazy-load/>
+  <image src="/assets/icon/news_card_list_arrow@2x.png" mode="aspectFill" lazy-load/>
 </view>
 <view class="game-score">
   <view class="game-all">
     <text>全部战绩</text>
     <image src="/assets/icon/personal_battle_down_arrow_normal@2x.png" mode="aspectFill" lazy-load/>
     <image src="/assets/icon/personal_win_3@2x.png" mode="aspectFill" lazy-load/>
+    <image src="/assets/icon/personal_battle_current_match_normal@2x.png" mode="aspectFill" lazy-load/>
+    <text>对战助手 ></text>
+  </view>
+  <view class="game-list">
+    <view class="game-item">
+      <view class="hero-img">
+        <image src="/assets/image/Yasuo.png" mode="aspectFill" lazy-load/>
+      </view>
+      <view class="game-detail">
+        <view class="game-detail-title">
+          <view>
+            <text>胜利</text>
+            <text>9/1/2</text>
+          </view>
+          <text>经典匹配</text>
+        </view>
+        <view class="game-detail-date">
+          <text>04-30 15:06</text>
+        </view>
+        <image class="game-detail-img" src="/assets/icon/news_card_list_arrow@2x.png" mode="aspectFill" lazy-load/>
+      </view>
+    </view>
+    <view class="game-item">
+      <view class="hero-img">
+        <image src="/assets/image/Yasuo.png" mode="aspectFill" lazy-load/>
+      </view>
+      <view class="game-detail">
+        <view class="game-detail-title">
+          <view>
+            <text>胜利</text>
+            <text>9/4/3</text>
+          </view>
+          <text>经典匹配</text>
+        </view>
+        <view class="game-detail-date">
+          <text>04-30 13:00</text>
+        </view>
+        <image class="game-detail-img" src="/assets/icon/news_card_list_arrow@2x.png" mode="aspectFill" lazy-load/>
+      </view>
+    </view>
+    <view class="game-item">
+      <view class="hero-img">
+        <image src="/assets/image/Yasuo.png" mode="aspectFill" lazy-load/>
+      </view>
+      <view class="game-detail">
+        <view class="game-detail-title">
+          <view>
+            <text>胜利</text>
+            <text>16/5/11</text>
+          </view>
+          <text>经典匹配</text>
+        </view>
+        <view class="game-detail-date">
+          <text>04-30 02:54</text>
+          <view class="game-honor">
+            <image src="/assets/icon/battle_mvp_img@2x.png" mode="aspectFill" lazy-load/>
+          </view>
+        </view>
+        <image class="game-detail-img" src="/assets/icon/news_card_list_arrow@2x.png" mode="aspectFill" lazy-load/>
+      </view>
+    </view>
   </view>
 </view>

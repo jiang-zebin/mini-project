@@ -113,7 +113,7 @@
   display:flex;
   justify-content:space-around;
   width:100%;
-  margin-bottom:10rpx;
+  margin-bottom:20rpx;
 }
 .right-up text{
   color:#B4A074;
@@ -188,4 +188,94 @@
 .game-all image:nth-child(3){
   width:134rpx;
   height:64rpx;
+}
+.game-all image:nth-child(4){
+  position:absolute;
+  width:144rpx;
+  height:44rpx;
+  right:0;
+}
+.game-all text:nth-child(5){
+  position:absolute;
+  font-size:11px;
+  color:#fff;
+  right:5rpx;
+}
+.game-item{
+  display:flex;
+  align-items:center;
+  padding-left:40rpx;
+}
+.hero-img{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:90rpx;
+  height:90rpx;
+  border:1rpx solid #D8B380;
+  border-radius:50%;
+  overflow:hidden;
+  margin-right:20rpx;
+}
+.hero-img image{
+  width:86rpx;
+  height:86rpx;
+  border-radius:50%;
+}
+.game-detail{
+  position:relative;
+  display:flex;
+  align-items:center;
+  width:580rpx;
+  border-bottom:1rpx solid #eee;
+  padding:20rpx 0;
+}
+.game-detail-title{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  margin-right:220rpx;
+}
+.game-detail-title view{
+  margin-bottom:5rpx;
+}
+.game-detail-title view text:first-child{
+  color:#6DB0C3;
+  font-size:18px;
+  margin-right:20rpx;
+}
+.game-detail-title view text:last-child{
+  color:#535C5D;
+  font-size:16px;
+}
+.game-detail-title text:last-child{
+  color:#A7AFAC;
+  font-size:15px;
+}
+.game-detail-date{
+  position:absolute;
+  height:100rpx;
+  right:40rpx;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-end;
+}
+.game-detail-date text{
+  color:#9FA8A8;
+  font-size:15px;
+}
+.game-honor{
+  height:50rpx;
+}
+.game-detail-date .game-honor image{
+  width:61rpx;
+  height:38rpx;
+}
+.game-detail-img{
+  position:absolute;
+  width:12rpx;
+  height:22rpx;
+  top:56rpx;
+  left:556rpx;
 }

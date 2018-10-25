@@ -1,1 +1,47 @@
-/* pages/profile/profile.wxss */
+.header{
+  position:relative;
+  display:flex;
+  justify-content:center;
+}
+.header-bg{
+  position:absolute;
+  left:-10%;
+  width:120%;
+  height:350rpx;
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius:50%;
+  z-index:-1;
+}
+.header-bg-bg{
+  position:absolute;
+  width:100%;
+  height:450rpx;
+  background-image:linear-gradient(to bottom,#3E888B,#E7F2F2);
+  opacity:0.8;
+}
+.avator-bd{
+  position:absolute;
+  width:148rpx;
+  height:148rpx;
+  top:130rpx;
+  left:50%;
+  margin-left:-74rpx;
+  margin-top:-74rpx;
+  z-index:2;
+}
+.avator-img{
+  position:absolute;
+  width:130rpx;
+  height:130rpx;
+  border-radius:50%;
+  top:130rpx;
+  left:50%;
+  margin-left:-65rpx;
+  margin-top:-65rpx;
+}
+.user-name{
+  position:absolute;
+  font-size:16px;
+  top:220rpx;
+  color:#244346;
+}

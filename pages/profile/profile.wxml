@@ -1,2 +1,7 @@
-<!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<view class="header">
+  <image class="header-bg" src="/assets/icon/friend_cycle_main_header_bg@2x.jpg" mode="aspectFill" lazy-load/>
+  <view class="header-bg-bg"></view>
+  <image class="avator-bd" src="/assets/icon/personal_content_battle_head_bg@2x.png" mode="aspectFill" lazy-load/>
+  <image class="avator-img" src="/assets/image/chat_room_push_news_default_header@2x.png"  mode="aspectFill" lazy-load/>
+  <text class="user-name">用户名称</text>
+</view>

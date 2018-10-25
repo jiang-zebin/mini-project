@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/profile/profile",
-    "pages/info/info"
+    "pages/index/index",
+    "pages/info/info",
+    "pages/cart/cart"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -20,6 +21,12 @@
         "text": "游戏商城",
         "iconPath": "assets/icon/tab_icon_mobile_store_normal@2x.png",
         "selectedIconPath": "assets/icon/tab_icon_mobile_store_press@2x.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "assets/icon/mobile_store_main_right_nav_buy_normal@2x.png",
+        "selectedIconPath": "assets/icon/mobile_store_continue_purchase@2x.png"
       },
       {
         "pagePath": "pages/info/info",

@@ -135,11 +135,11 @@
   position:relative;
   width:91%;
   height:200rpx;
-  margin:20rpx auto;
+  margin:30rpx auto;
   overflow:hidden;
   border-radius:10rpx;
 }
-.recom-item image{
+.recom-item image:first-child{
   width:100%;
 }
 .recom-info{

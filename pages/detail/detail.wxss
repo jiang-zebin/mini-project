@@ -1,0 +1,143 @@
+.detail-bg{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background-color:#000;
+  z-index:-1;
+}
+.detail-bg image{
+  width:100%;
+  height:90%;
+}
+.bottom-btn{
+  position:fixed;
+  display:flex;
+  width:100%;
+  height:100rpx;
+  bottom:0;
+  background-color:#fff;
+}
+.give-btn,.add-btn,.buy-btn{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:33.3333%;
+  height:100%;
+  font-size:15px;
+}
+.give-btn{
+  color:#A89B7E;
+}
+.add-btn{
+  color:#fff;
+  background-image:linear-gradient(to right,#E8902E,#F25A25);
+}
+.buy-btn{
+  color:#fff;
+  background-image:linear-gradient(to right,#B53647,#F64E33);
+}
+.detail-info{
+  position:absolute;
+  top:800rpx;
+  width:100%;
+  background-color:rgba(0,0,0,.9);
+  color:#fff;
+  margin-bottom:100rpx;
+  padding-top:40rpx;
+}
+.detail-title{
+  font-size:24px;
+  padding-left:30rpx;
+}
+.detail-subtitle{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:30rpx;
+}
+.info-left{
+  
+}
+.left-up{
+  display:flex;
+  align-items:center;
+  font-size:18px;
+  
+}
+.left-up image{
+  width:35rpx;
+  height:35rpx;
+  margin-right:10rpx;
+}
+.left-up text:nth-child(2){
+  margin-right:20rpx;
+}
+.left-down{
+  font-size:12px;
+  color:#87868B;
+  margin-top:25rpx;
+}
+.info-right{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  border-left:1rpx solid #333;
+  padding-left:30rpx;
+}
+.info-right image{
+  width:35rpx;
+  height:35rpx;
+  margin-bottom:10rpx;
+}
+.info-right text{
+  font-size:14px;
+}
+.more-tips{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+.tips-line{
+  width:240rpx;
+  height:2rpx;
+  background-color:#666;
+}
+.more-tips text{
+  color:#fff;
+  font-size:15px;
+}
+.recom-box{
+  margin-top:20rpx;
+}
+.recom-item{
+  position:relative;
+  width:91%;
+  height:200rpx;
+  margin:30rpx auto;
+  overflow:hidden;
+  border-radius:10rpx;
+}
+.recom-item image:first-child{
+  width:100%;
+}
+.recom-info{
+  position:absolute;
+  top:50rpx;
+  left:20rpx;
+}
+.recom-title{
+  font-size:16px;
+  color:#DAB68A;
+}
+.recom-item .recom-price image{
+  width:20rpx;
+  height:20rpx;
+  vertical-align:middle;
+  margin-right:10rpx;
+}
+.recom-item .recom-price text{
+  color:#DAB68A;
+  font-size:12px;
+  margin-right:20rpx;
+}

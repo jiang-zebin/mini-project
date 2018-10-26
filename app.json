@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/profile/profile",
+    "pages/detail/detail",
     "pages/index/index",
+    "pages/settings/settings",
+    "pages/profile/profile",
     "pages/info/info",
     "pages/cart/cart"
   ],
@@ -25,7 +27,7 @@
       {
         "pagePath": "pages/cart/cart",
         "text": "购物车",
-        "iconPath": "assets/icon/mobile_store_main_right_nav_buy_normal@2x.png",
+        "iconPath": "assets/icon/mobile_store_main_right_nav_buy_normal@3x.png",
         "selectedIconPath": "assets/icon/mobile_store_continue_purchase@2x.png"
       },
       {

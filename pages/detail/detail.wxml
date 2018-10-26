@@ -1,0 +1,107 @@
+<view class="detail-bg">
+  <image src="/assets/image/big157003.jpg" mode="aspectFill" lazy-load/>
+</view>
+<view class="detail-info">
+  <view class="detail-title">腥红之月 亚索</view>
+  <view class="detail-subtitle">
+    <view class="info-left">
+      <view class="left-up">
+        <image src="/assets/icon/mobile_store_price_white@2x.png" mode="aspectFill" lazy-load/>
+        <text>7900</text>
+        <image src="/assets/icon/mobile_store_rmb_white@2x.png" mode="aspectFill" lazy-load/>
+        <text>79.00</text>
+      </view>
+      <view class="left-down">上架时间:2018.10.24</view>
+    </view>
+    <view class="info-right">
+      <image src="/assets/icon/personal_guest_unsubscribe_nav_right@2x.png" mode="aspectFill" lazy-load/>
+      <text>打折提醒</text>
+    </view>
+  </view>
+  <view class="more-tips">
+    <view class="tips-line"></view>
+    <text>相关推荐</text>
+    <view class="tips-line"></view>
+  </view>
+  <view class="recom-box">
+    <navigator class="recom-item">
+      <image src="/assets/image/big92000.jpg" mode="aspectFill" lazy-load/>
+      <image src="/assets/icon/mobile_store_hero_angle_bg@2x.png" mode="aspectFill" lazy-load />
+      <view class="recom-info">
+        <text class="recom-title">放逐之刃 锐雯</text>
+        <view class="recom-price">
+          <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+          <text>4500</text>
+          <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+          <text>6300</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator class="recom-item">
+      <image src="/assets/image/big157000.jpg" mode="aspectFill" lazy-load/>
+      <image src="/assets/icon/mobile_store_hero_angle_bg@2x.png" mode="aspectFill" lazy-load />
+      <view class="recom-info">
+        <text class="recom-title">疾风剑豪 亚索</text>
+        <view class="recom-price">
+          <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+          <text>4500</text>
+          <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+          <text>6300</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator class="recom-item">
+      <image src="/assets/image/big238000.jpg" mode="aspectFill" lazy-load/>
+      <image src="/assets/icon/mobile_store_hero_angle_bg@2x.png" mode="aspectFill" lazy-load />
+      <view class="recom-info">
+        <text class="recom-title">影流之主 劫</text>
+        <view class="recom-price">
+          <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+          <text>4500</text>
+          <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+          <text>6300</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class="recom-box">
+    <navigator class="recom-item">
+      <image src="/assets/image/big92016.jpg" mode="aspectFill" lazy-load/>
+      <image src="/assets/icon/mobile_store_discount_icon@2x.png" mode="aspectFill" lazy-load />
+      <view class="recom-info">
+        <text class="recom-title">黎明使者 锐雯</text>
+        <view class="recom-price">
+          <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+          <text>9900</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator class="recom-item">
+      <image src="/assets/image/big157009.jpg" mode="aspectFill" lazy-load/>
+      <image src="/assets/icon/mobile_store_discount_icon@2x.png" mode="aspectFill" lazy-load />
+      <view class="recom-info">
+        <text class="recom-title">黑夜使者 亚索</text>
+        <view class="recom-price">
+          <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+          <text>9900</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator class="recom-item">
+      <image src="/assets/image/big238010.jpg" mode="aspectFill" lazy-load/>
+      <image src="/assets/icon/mobile_store_discount_icon@2x.png" mode="aspectFill" lazy-load />
+      <view class="recom-info">
+        <text class="recom-title">冠军之影 劫</text>
+        <view class="recom-price">
+          <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+          <text>6900</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+<view class="bottom-btn">
+  <view class="give-btn">赠送</view>
+  <view class="add-btn">加入购物车</view>
+  <view class="buy-btn">立即购买</view>
+</view>

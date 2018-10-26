@@ -1,3 +1,6 @@
+page{
+  font-family:"黑体";
+}
 .box-title{
   border-left:10rpx solid #043653;
   font-size:13px;
@@ -30,4 +33,12 @@
   height:20rpx;
   background:#f1f1f1;
   box-shadow:0 5rpx 5rpx rgba(0,0,0,.1) inset;
+}
+.cell{
+  background-color:#fff;
+  font-size:16px;
+}
+.cell-item{
+  border-bottom:1rpx solid #ddd;
+  padding:30rpx;
 }

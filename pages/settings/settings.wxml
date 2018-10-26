@@ -1,0 +1,17 @@
+<view class="header">
+  <image class="header-img" src="/assets/icon/good_data_view_detail_background@2x.png" mode="aspectFill" lazy-load/>
+  <image class="header-logo" src="/assets/icon/more_logo@2x.png" mode="aspectFill" lazy-load/>
+</view>
+<view class="divider"></view>
+<view class="cell">
+  <view class="cell-item arrow">个人资料</view>
+  <view class="cell-item arrow">全部订单</view>
+  <view class="cell-item arrow">收藏商品</view>
+  <view class="cell-item arrow">收货地址</view>
+</view>
+<view class="divider"></view>
+<view class="cell">
+  <view class="cell-item arrow">关于我们</view>
+  <view class="cell-item arrow">帮助中心</view>
+  <view class="cell-item arrow">客服热线</view>
+</view>

@@ -1,4 +1,4 @@
-// pages/profile/profile.js
+// pages/detail/detail.js
 Page({
 
   /**
@@ -62,10 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  showSettings:function(e){
-    wx.navigateTo({
-      url:"/pages/settings/settings"
-    })
   }
 })

@@ -5,9 +5,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    district:["艾欧尼亚","祖安","战争学院","雷瑟守备"],
+    index:0
   },
-
+  districtChange:function(e){
+    this.setData({
+      index: e.detail.value
+    })
+  },
+  show:function(e){
+    console.log(e.detail.value)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

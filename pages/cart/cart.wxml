@@ -1,2 +1,53 @@
-<!--pages/cart/cart.wxml-->
-<text>pages/cart/cart.wxml</text>
+<view class="cart-header">
+  <picker bindchange="districtChange" mode="selector" value="{{index}}" range="{{district}}">
+    <view class="district-info">
+      <text>当前大区</text>
+      <text class="arrow">{{district[index]}}</text>
+    </view>
+  </picker>
+</view>
+<checkbox-group bindchange="show">
+  <view class="cart-item">
+    <checkbox value="1" />
+    <view class="item-info">
+      <image class="item-img" src="/assets/image/big157000.jpg" mode="aspectFill" lazy-load/>
+      <view class="item-detail">
+        <text class="item-title">疾风剑豪 亚索</text>
+        <view class="item-price">
+          <image src="/assets/icon/mobile_store_price_color_one@2x.png" mode="aspectFill" lazy-load/>
+          <text>4500</text>
+          <image src="/assets/icon/mobile_store_rmb_color_one@2x.png" mode="aspectFill" lazy-load/>
+          <text>45.00</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="cart-item">
+    <checkbox value="1" />
+    <view class="item-info">
+      <image class="item-img" src="/assets/image/big157000.jpg" mode="aspectFill" lazy-load/>
+      <view class="item-detail">
+        <text class="item-title">疾风剑豪 亚索</text>
+        <view class="item-price">
+          <image src="/assets/icon/mobile_store_price_color_one@2x.png" mode="aspectFill" lazy-load/>
+          <text>4500</text>
+          <image src="/assets/icon/mobile_store_rmb_color_one@2x.png" mode="aspectFill" lazy-load/>
+          <text>45.00</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</checkbox-group>
+<view class="sum-box">
+  <view class="checkall">
+    <checkbox/>
+    <text>全选</text>
+  </view>
+  <view class="sum-price">
+    <text>合计</text>
+    <text>0</text>
+  </view>
+  <view class="sum-btn">
+    结算(0)
+  </view>
+</view>

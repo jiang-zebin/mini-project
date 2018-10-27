@@ -1,0 +1,116 @@
+<view class="product-nav">
+  <view class="active">英雄</view>
+  <view>皮肤</view>
+  <view>守卫/图标</view>
+  <view>礼包</view>
+</view>
+<view class="product-list">
+  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
+    <image class="product-img" src="/assets/image/big92000.jpg" mode="aspectFill" lazy-load/>
+    <view class="product-title">
+      <text>放逐之刃 锐雯</text>
+      <view class="product-price">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+        <text>4500</text>
+        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+        <text>6300</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
+    <image class="product-img" src="/assets/image/big157000.jpg" mode="aspectFill" lazy-load/>
+    <view class="product-title">
+      <text>疾风剑豪 亚索</text>
+      <view class="product-price">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+        <text>4500</text>
+        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+        <text>6300</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
+    <image class="product-img" src="/assets/image/big238000.jpg" mode="aspectFill" lazy-load/>
+    <view class="product-title">
+      <text>影流之主 劫</text>
+      <view class="product-price">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+        <text>4500</text>
+        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+        <text>6300</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
+    <image class="product-img" src="/assets/image/big92000.jpg" mode="aspectFill" lazy-load/>
+    <view class="product-title">
+      <text>放逐之刃 锐雯</text>
+      <view class="product-price">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+        <text>4500</text>
+        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+        <text>6300</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
+    <image class="product-img" src="/assets/image/big157000.jpg" mode="aspectFill" lazy-load/>
+    <view class="product-title">
+      <text>疾风剑豪 亚索</text>
+      <view class="product-price">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+        <text>4500</text>
+        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+        <text>6300</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
+    <image class="product-img" src="/assets/image/big238000.jpg" mode="aspectFill" lazy-load/>
+    <view class="product-title">
+      <text>影流之主 劫</text>
+      <view class="product-price">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+        <text>4500</text>
+        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+        <text>6300</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
+    <image class="product-img" src="/assets/image/big92000.jpg" mode="aspectFill" lazy-load/>
+    <view class="product-title">
+      <text>放逐之刃 锐雯</text>
+      <view class="product-price">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+        <text>4500</text>
+        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+        <text>6300</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
+    <image class="product-img" src="/assets/image/big157000.jpg" mode="aspectFill" lazy-load/>
+    <view class="product-title">
+      <text>疾风剑豪 亚索</text>
+      <view class="product-price">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+        <text>4500</text>
+        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+        <text>6300</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
+    <image class="product-img" src="/assets/image/big238000.jpg" mode="aspectFill" lazy-load/>
+    <view class="product-title">
+      <text>影流之主 劫</text>
+      <view class="product-price">
+        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
+        <text>4500</text>
+        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+        <text>6300</text>
+      </view>
+    </view>
+  </navigator>
+</view>

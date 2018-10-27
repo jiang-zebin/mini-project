@@ -1,11 +1,12 @@
 {
   "pages": [
+    "pages/cart/cart",
+    "pages/product/product",
     "pages/detail/detail",
-    "pages/index/index",
     "pages/settings/settings",
     "pages/profile/profile",
     "pages/info/info",
-    "pages/cart/cart"
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -28,7 +29,7 @@
         "pagePath": "pages/cart/cart",
         "text": "购物车",
         "iconPath": "assets/icon/mobile_store_main_right_nav_buy_normal@3x.png",
-        "selectedIconPath": "assets/icon/mobile_store_continue_purchase@2x.png"
+        "selectedIconPath": "assets/icon/mobile_store_continue_purchase@3x.png"
       },
       {
         "pagePath": "pages/info/info",

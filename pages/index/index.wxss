@@ -128,37 +128,3 @@
   border-radius:10rpx;
   position:relative;
 }
-.recom-box{
-  margin-top:20rpx;
-}
-.recom-item{
-  position:relative;
-  width:91%;
-  height:200rpx;
-  margin:30rpx auto;
-  overflow:hidden;
-  border-radius:10rpx;
-}
-.recom-item image:first-child{
-  width:100%;
-}
-.recom-info{
-  position:absolute;
-  top:50rpx;
-  left:20rpx;
-}
-.recom-title{
-  font-size:16px;
-  color:#DAB68A;
-}
-.recom-item .recom-price image{
-  width:20rpx;
-  height:20rpx;
-  vertical-align:middle;
-  margin-right:10rpx;
-}
-.recom-item .recom-price text{
-  color:#DAB68A;
-  font-size:12px;
-  margin-right:20rpx;
-}

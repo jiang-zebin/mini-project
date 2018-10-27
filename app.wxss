@@ -1,13 +1,15 @@
 page{
   font-family:"黑体";
 }
+/*模块标签*/
 .box-title{
   border-left:10rpx solid #043653;
-  font-size:13px;
+  font-size:15px;
   color:#333;
   padding-left:10rpx;
   margin:0 36rpx;
 }
+/*右侧箭头*/
 .arrow{
   display:flex;
   justify-content:space-between;
@@ -21,6 +23,7 @@ page{
   border-right:3rpx solid #aaa;
   transform:rotate(45deg);
 }
+/*下划线*/
 .underline:after{
   display:block;
   content:"";
@@ -29,11 +32,13 @@ page{
   background-color:#ccc;
   margin:20rpx auto;
 }
+/*分割块*/
 .divider{
   height:20rpx;
   background:#f1f1f1;
   box-shadow:0 5rpx 5rpx rgba(0,0,0,.1) inset;
 }
+/*列*/
 .cell{
   background-color:#fff;
   font-size:16px;
@@ -41,4 +46,51 @@ page{
 .cell-item{
   border-bottom:1rpx solid #ddd;
   padding:30rpx;
+}
+/*推荐模块*/
+.recom-box{
+  margin-top:20rpx;
+}
+.recom-item{
+  position:relative;
+  width:91%;
+  height:200rpx;
+  margin:30rpx auto;
+  overflow:hidden;
+  border-radius:10rpx;
+}
+.recom-item image:first-child{
+  width:100%;
+}
+.recom-info{
+  position:absolute;
+  top:50rpx;
+  left:20rpx;
+}
+.recom-title{
+  font-size:16px;
+  color:#DAB68A;
+}
+.recom-item .recom-price image{
+  width:20rpx;
+  height:20rpx;
+  vertical-align:middle;
+  margin-right:10rpx;
+}
+.recom-item .recom-price text{
+  color:#DAB68A;
+  font-size:12px;
+  margin-right:20rpx;
+}
+/*选项卡选定*/
+.active{
+  color:#0E9899;
+}
+.active::after{
+  display:block;
+  content:"";
+  width:50%;
+  height:4rpx;
+  background-color:#0E9899;
+  margin:0 auto;
 }

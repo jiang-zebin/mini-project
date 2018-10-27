@@ -24,9 +24,12 @@
     <view class="tips-line"></view>
   </view>
   <view class="recom-box">
-    <navigator class="recom-item">
+    <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
       <image src="/assets/image/big92000.jpg" mode="aspectFill" lazy-load/>
-      <image src="/assets/icon/mobile_store_hero_angle_bg@2x.png" mode="aspectFill" lazy-load />
+      <view class="recom-tips">
+        <image src="/assets/icon/mobile_store_hero_angle_bg@2x.png" mode="aspectFill" lazy-load />
+        <text>英雄</text>
+      </view>
       <view class="recom-info">
         <text class="recom-title">放逐之刃 锐雯</text>
         <view class="recom-price">
@@ -37,9 +40,12 @@
         </view>
       </view>
     </navigator>
-    <navigator class="recom-item">
+    <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
       <image src="/assets/image/big157000.jpg" mode="aspectFill" lazy-load/>
-      <image src="/assets/icon/mobile_store_hero_angle_bg@2x.png" mode="aspectFill" lazy-load />
+      <view class="recom-tips">
+        <image src="/assets/icon/mobile_store_hero_angle_bg@2x.png" mode="aspectFill" lazy-load />
+        <text>英雄</text>
+      </view>
       <view class="recom-info">
         <text class="recom-title">疾风剑豪 亚索</text>
         <view class="recom-price">
@@ -50,9 +56,12 @@
         </view>
       </view>
     </navigator>
-    <navigator class="recom-item">
+    <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
       <image src="/assets/image/big238000.jpg" mode="aspectFill" lazy-load/>
-      <image src="/assets/icon/mobile_store_hero_angle_bg@2x.png" mode="aspectFill" lazy-load />
+      <view class="recom-tips">
+        <image src="/assets/icon/mobile_store_hero_angle_bg@2x.png" mode="aspectFill" lazy-load />
+        <text>英雄</text>
+      </view>
       <view class="recom-info">
         <text class="recom-title">影流之主 劫</text>
         <view class="recom-price">
@@ -65,9 +74,12 @@
     </navigator>
   </view>
   <view class="recom-box">
-    <navigator class="recom-item">
+    <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
       <image src="/assets/image/big92016.jpg" mode="aspectFill" lazy-load/>
-      <image src="/assets/icon/mobile_store_discount_icon@2x.png" mode="aspectFill" lazy-load />
+      <view class="recom-tips">
+        <image src="/assets/icon/mobile_store_discount_icon@2x.png" mode="aspectFill" lazy-load />
+        <text>皮肤</text>
+      </view>
       <view class="recom-info">
         <text class="recom-title">黎明使者 锐雯</text>
         <view class="recom-price">
@@ -76,9 +88,12 @@
         </view>
       </view>
     </navigator>
-    <navigator class="recom-item">
+    <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
       <image src="/assets/image/big157009.jpg" mode="aspectFill" lazy-load/>
-      <image src="/assets/icon/mobile_store_discount_icon@2x.png" mode="aspectFill" lazy-load />
+      <view class="recom-tips">
+        <image src="/assets/icon/mobile_store_discount_icon@2x.png" mode="aspectFill" lazy-load />
+        <text>皮肤</text>
+      </view>
       <view class="recom-info">
         <text class="recom-title">黑夜使者 亚索</text>
         <view class="recom-price">
@@ -87,9 +102,12 @@
         </view>
       </view>
     </navigator>
-    <navigator class="recom-item">
+    <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
       <image src="/assets/image/big238010.jpg" mode="aspectFill" lazy-load/>
-      <image src="/assets/icon/mobile_store_discount_icon@2x.png" mode="aspectFill" lazy-load />
+      <view class="recom-tips">
+        <image src="/assets/icon/mobile_store_discount_icon@2x.png" mode="aspectFill" lazy-load />
+        <text>皮肤</text>
+      </view>
       <view class="recom-info">
         <text class="recom-title">冠军之影 劫</text>
         <view class="recom-price">

@@ -68,17 +68,6 @@
   color:#667980;
   font-size:16px;
 }
-.active{
-  color:#0E9899;
-}
-.active::after{
-  display:block;
-  content:"";
-  width:50%;
-  height:4rpx;
-  background-color:#0E9899;
-  margin:0 auto;
-}
 .info-detail{
   display:flex;
   justify-content:space-around;

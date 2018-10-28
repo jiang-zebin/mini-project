@@ -8,6 +8,8 @@ page{
   display:flex;
   justify-content:space-between;
   padding:10rpx;
+  font-size:16px;
+  color:#aaa;
 }
 .cart-item{
   display:flex;

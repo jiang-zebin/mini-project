@@ -6,48 +6,41 @@
     </view>
   </picker>
 </view>
-<checkbox-group bindchange="show">
-  <view class="cart-item">
-    <checkbox value="1" />
-    <view class="item-info">
-      <image class="item-img" src="/assets/image/big157000.jpg" mode="aspectFill" lazy-load/>
-      <view class="item-detail">
-        <text class="item-title">疾风剑豪 亚索</text>
-        <view class="item-price">
-          <image src="/assets/icon/mobile_store_price_color_one@2x.png" mode="aspectFill" lazy-load/>
-          <text>4500</text>
-          <image src="/assets/icon/mobile_store_rmb_color_one@2x.png" mode="aspectFill" lazy-load/>
-          <text>45.00</text>
-        </view>
+<view class="cart-item" wx:for="{{cartlist}}" wx:key="{{index}}">
+  <image class="select" wx:if="{{!item.check}}" data-id="{{item.cid}}" bindtap="selectOne" src="/assets/icon/batch_cancel_normal_unselected@2x.png" mode="aspectFill" lazy-load/>
+  <image class="unselect" wx:else data-id="{{item.cid}}" bindtap="selectOne" src="/assets/icon/batch_cancel_normal_selected@2x.png" mode="aspectFill" lazy-load/>
+  <view class="item-info">
+    <image class="item-img" src="{{item.img_url}}" mode="aspectFill" lazy-load/>
+    <view class="item-detail">
+      <text class="item-title">{{item.title}}</text>
+      <view class="item-price">
+        <image src="/assets/icon/mobile_store_price_color_one@2x.png" mode="aspectFill" lazy-load/>
+        <text>{{item.price}}</text>
+        <image src="/assets/icon/mobile_store_rmb_color_one@2x.png" mode="aspectFill" lazy-load/>
+        <text>{{item.rmb}}</text>
       </view>
     </view>
   </view>
-  <view class="cart-item">
-    <checkbox value="1" />
-    <view class="item-info">
-      <image class="item-img" src="/assets/image/big157000.jpg" mode="aspectFill" lazy-load/>
-      <view class="item-detail">
-        <text class="item-title">疾风剑豪 亚索</text>
-        <view class="item-price">
-          <image src="/assets/icon/mobile_store_price_color_one@2x.png" mode="aspectFill" lazy-load/>
-          <text>4500</text>
-          <image src="/assets/icon/mobile_store_rmb_color_one@2x.png" mode="aspectFill" lazy-load/>
-          <text>45.00</text>
-        </view>
-      </view>
-    </view>
-  </view>
-</checkbox-group>
+</view>
 <view class="sum-box">
   <view class="checkall">
-    <checkbox/>
+    <image class="select" wx:if="{{!checkAll}}" bindtap="selectAll" src="/assets/icon/batch_cancel_normal_unselected@2x.png" mode="aspectFill" lazy-load/>
+    <image class="unselect" wx:else bindtap="selectAll" src="/assets/icon/batch_cancel_normal_selected@2x.png" mode="aspectFill" lazy-load/>
     <text>全选</text>
   </view>
   <view class="sum-price">
-    <text>合计</text>
-    <text>0</text>
+    <view class="price-rmb">
+      <text>合计</text>
+      <image src="/assets/icon/mobile_store_rmb_color_one@2x.png" mode="aspectFill" lazy-load wx:if="{{priceAll!=0}}"/>
+      <text>{{rmbAll}}</text>
+    </view>
+    <view class="price-store" wx:if="{{priceAll!=0}}">
+      <text>或</text>
+      <image src="/assets/icon/mobile_store_price_color_one@2x.png" mode="aspectFill" lazy-load/>
+      <text>{{priceAll}}</text>
+    </view>
   </view>
   <view class="sum-btn">
-    结算(0)
+    结算({{count}})
   </view>
 </view>

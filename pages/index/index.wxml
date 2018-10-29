@@ -2,7 +2,7 @@
   <input class="search-input" placeholder="请输入您想查找的商品"></input>
   <image src="/assets/icon/search_icon@2x.png" mode="aspectFill" class="search-icon"/>
 </view>
-<swiper autoplay interval="4000" duration="700" indicator-dots="{{true}}" indicator-color="#666" indicator-active-color="white" class="shop-swiper">
+<swiper previous-margin="50rpx" next-margin="50rpx" circular="{{true}}" autoplay interval="4000" duration="700" indicator-dots="{{true}}" indicator-color="#666" indicator-active-color="white" class="shop-swiper">
   <swiper-item class="swiper-item">
     <image src="/assets/image/big157001.jpg" mode="aspectFill" lazy-load/>
   </swiper-item>

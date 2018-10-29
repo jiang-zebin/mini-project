@@ -40,13 +40,13 @@
 }
 .avator-img{
   position:absolute;
-  width:130rpx;
-  height:130rpx;
+  width:132rpx;
+  height:132rpx;
   border-radius:50%;
   top:170rpx;
   left:50%;
-  margin-left:-65rpx;
-  margin-top:-65rpx;
+  margin-left:-66rpx;
+  margin-top:-66rpx;
 }
 .user-name{
   position:absolute;

@@ -3,8 +3,8 @@
   <view class="header-bg-bg"></view>
   <image class="set-btn" src="/assets/icon/expresstion_set@2x.png" mode="aspectFill" lazy-load catchtap="showSettings"/>
   <image class="avator-bd" src="/assets/icon/personal_content_battle_head_bg@2x.png" mode="aspectFill" lazy-load/>
-  <image class="avator-img" src="/assets/image/chat_room_push_news_default_header@2x.png"  mode="aspectFill" lazy-load/>
-  <text class="user-name">用户名称</text>
+  <image class="avator-img" src="{{avatarUrl}}"  mode="aspectFill" lazy-load/>
+  <text class="user-name">{{nickName}}</text>
 </view>
 <view class="info">
   <view class="info-nav">

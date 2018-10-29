@@ -42,7 +42,7 @@
   width:100%;
   background-color:rgba(0,0,0,.9);
   color:#fff;
-  margin-bottom:100rpx;
+  padding-bottom:100rpx;
   padding-top:40rpx;
 }
 .detail-title{

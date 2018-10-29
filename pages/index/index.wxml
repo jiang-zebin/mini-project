@@ -4,16 +4,16 @@
 </view>
 <swiper previous-margin="50rpx" next-margin="50rpx" circular="{{true}}" autoplay interval="4000" duration="700" indicator-dots="{{true}}" indicator-color="#666" indicator-active-color="white" class="shop-swiper">
   <swiper-item class="swiper-item">
-    <image src="/assets/image/big157001.jpg" mode="aspectFill" lazy-load/>
+    <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157001.jpg" mode="aspectFill" lazy-load/>
   </swiper-item>
   <swiper-item class="swiper-item">
-    <image src="/assets/image/big157002.jpg" mode="aspectFill" lazy-load/>
+    <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157002.jpg" mode="aspectFill" lazy-load/>
   </swiper-item>
   <swiper-item class="swiper-item">
-    <image src="/assets/image/big157003.jpg" mode="aspectFill" lazy-load/>
+    <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157003.jpg" mode="aspectFill" lazy-load/>
   </swiper-item>
   <swiper-item class="swiper-item">
-    <image src="/assets/image/big157009.jpg" mode="aspectFill" lazy-load/>
+    <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157009.jpg" mode="aspectFill" lazy-load/>
   </swiper-item>
 </swiper>
 <view class="product-nav">
@@ -42,7 +42,7 @@
 <view class="box-title arrow">最新上架</view>
 <view class="news-box">
   <navigator class="news-left" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image src="/assets/image/2018-10-23_191431.png" mode="aspectFill" lazy-load/>
+    <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big92003.jpg" mode="aspectFill" lazy-load/>
     <view class="left-info">
       <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load/>
       <text>9900</text>
@@ -51,7 +51,7 @@
   </navigator>
   <view class="news-right">
     <navigator class="right-up" url="{{'/pages/detail/detail?id='+item.id}}">
-      <image src="/assets/image/2018-10-23_191527.png" mode="aspectFill" lazy-load/>
+      <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big92004.jpg" mode="aspectFill" lazy-load/>
       <view class="right-info">
         <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load/>
         <text>12900</text>
@@ -59,7 +59,7 @@
       <view class="right-info-title">冠军之刃 锐雯</view>
     </navigator>
     <navigator class="right-down" url="{{'/pages/detail/detail?id='+item.id}}">
-      <image src="/assets/image/2018-10-23_191546.png" mode="aspectFill" lazy-load/>
+      <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big238001.jpg" mode="aspectFill" lazy-load/>
       <view class="right-info">
         <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load/>
         <text>6900</text>
@@ -72,7 +72,7 @@
 <view class="box-title arrow">推荐英雄</view>
 <view class="recom-box">
   <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image src="/assets/image/big92000.jpg" mode="aspectFill" lazy-load/>
+    <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big92000.jpg" mode="aspectFill" lazy-load/>
     <view class="recom-info">
       <text class="recom-title">放逐之刃 锐雯</text>
       <view class="recom-price">
@@ -84,7 +84,7 @@
     </view>
   </navigator>
   <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image src="/assets/image/big157000.jpg" mode="aspectFill" lazy-load/>
+    <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157000.jpg" mode="aspectFill" lazy-load/>
     <view class="recom-info">
       <text class="recom-title">疾风剑豪 亚索</text>
       <view class="recom-price">
@@ -96,7 +96,7 @@
     </view>
   </navigator>
   <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image src="/assets/image/big238000.jpg" mode="aspectFill" lazy-load/>
+    <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big238000.jpg" mode="aspectFill" lazy-load/>
     <view class="recom-info">
       <text class="recom-title">影流之主 劫</text>
       <view class="recom-price">
@@ -112,7 +112,7 @@
 <view class="box-title arrow">推荐皮肤</view>
 <view class="recom-box">
   <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image src="/assets/image/big92016.jpg" mode="aspectFill" lazy-load/>
+    <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big92016.jpg" mode="aspectFill" lazy-load/>
     <view class="recom-info">
       <text class="recom-title">黎明使者 锐雯</text>
       <view class="recom-price">
@@ -122,7 +122,7 @@
     </view>
   </navigator>
   <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image src="/assets/image/big157009.jpg" mode="aspectFill" lazy-load/>
+    <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157009.jpg" mode="aspectFill" lazy-load/>
     <view class="recom-info">
       <text class="recom-title">黑夜使者 亚索</text>
       <view class="recom-price">
@@ -132,7 +132,7 @@
     </view>
   </navigator>
   <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image src="/assets/image/big238010.jpg" mode="aspectFill" lazy-load/>
+    <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big238010.jpg" mode="aspectFill" lazy-load/>
     <view class="recom-info">
       <text class="recom-title">冠军之影 劫</text>
       <view class="recom-price">

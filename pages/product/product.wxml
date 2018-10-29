@@ -6,7 +6,7 @@
 </view>
 <view class="product-list">
   <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="/assets/image/big92000.jpg" mode="aspectFill" lazy-load/>
+    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big92000.jpg" mode="aspectFill" lazy-load/>
     <view class="product-title">
       <text>放逐之刃 锐雯</text>
       <view class="product-price">
@@ -18,7 +18,7 @@
     </view>
   </navigator>
   <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="/assets/image/big157000.jpg" mode="aspectFill" lazy-load/>
+    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157000.jpg" mode="aspectFill" lazy-load/>
     <view class="product-title">
       <text>疾风剑豪 亚索</text>
       <view class="product-price">
@@ -30,7 +30,7 @@
     </view>
   </navigator>
   <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="/assets/image/big238000.jpg" mode="aspectFill" lazy-load/>
+    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big238000.jpg" mode="aspectFill" lazy-load/>
     <view class="product-title">
       <text>影流之主 劫</text>
       <view class="product-price">
@@ -42,7 +42,7 @@
     </view>
   </navigator>
   <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="/assets/image/big92000.jpg" mode="aspectFill" lazy-load/>
+    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big92000.jpg" mode="aspectFill" lazy-load/>
     <view class="product-title">
       <text>放逐之刃 锐雯</text>
       <view class="product-price">
@@ -54,7 +54,7 @@
     </view>
   </navigator>
   <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="/assets/image/big157000.jpg" mode="aspectFill" lazy-load/>
+    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157000.jpg" mode="aspectFill" lazy-load/>
     <view class="product-title">
       <text>疾风剑豪 亚索</text>
       <view class="product-price">
@@ -66,7 +66,7 @@
     </view>
   </navigator>
   <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="/assets/image/big238000.jpg" mode="aspectFill" lazy-load/>
+    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big238000.jpg" mode="aspectFill" lazy-load/>
     <view class="product-title">
       <text>影流之主 劫</text>
       <view class="product-price">
@@ -78,7 +78,7 @@
     </view>
   </navigator>
   <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="/assets/image/big92000.jpg" mode="aspectFill" lazy-load/>
+    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big92000.jpg" mode="aspectFill" lazy-load/>
     <view class="product-title">
       <text>放逐之刃 锐雯</text>
       <view class="product-price">
@@ -90,7 +90,7 @@
     </view>
   </navigator>
   <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="/assets/image/big157000.jpg" mode="aspectFill" lazy-load/>
+    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157000.jpg" mode="aspectFill" lazy-load/>
     <view class="product-title">
       <text>疾风剑豪 亚索</text>
       <view class="product-price">
@@ -102,7 +102,7 @@
     </view>
   </navigator>
   <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="/assets/image/big238000.jpg" mode="aspectFill" lazy-load/>
+    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big238000.jpg" mode="aspectFill" lazy-load/>
     <view class="product-title">
       <text>影流之主 劫</text>
       <view class="product-price">

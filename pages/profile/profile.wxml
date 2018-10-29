@@ -58,7 +58,7 @@
   <view class="game-list">
     <view class="game-item">
       <view class="hero-img">
-        <image src="/assets/image/Yasuo.png" mode="aspectFill" lazy-load/>
+        <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/small157000.jpg" mode="aspectFill" lazy-load/>
       </view>
       <view class="game-detail">
         <view class="game-detail-title">
@@ -76,7 +76,7 @@
     </view>
     <view class="game-item">
       <view class="hero-img">
-        <image src="/assets/image/Yasuo.png" mode="aspectFill" lazy-load/>
+        <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/small157000.jpg" mode="aspectFill" lazy-load/>
       </view>
       <view class="game-detail">
         <view class="game-detail-title">
@@ -94,7 +94,7 @@
     </view>
     <view class="game-item">
       <view class="hero-img">
-        <image src="/assets/image/Yasuo.png" mode="aspectFill" lazy-load/>
+        <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/small157000.jpg" mode="aspectFill" lazy-load/>
       </view>
       <view class="game-detail">
         <view class="game-detail-title">

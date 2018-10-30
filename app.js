@@ -8,16 +8,38 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
     // 登录
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        if(res.code){
+          wx.request({
+            url: 'https://api.weixin.qq.com/sns/jscode2session?appid=wxd3bdce890ffdd911&secret=a022580f863276b9f099ff33b9a08592&js_code=' + res.code + '&grant_type=authorization_code',
+            success:(result)=>{
+              this.globalData.userOpenId=result.data.openid;
+              wx.request({
+                url:"http://127.0.0.1:3000/loginMini?id="+result.data.openid,
+                success:(res)=>{
+                  console.log(res)
+                }
+              })
+            }
+          })
+        }
       }
     })
     // 获取用户信息
     wx.getSetting({
       success: res => {
+        if (!res.authSetting['scope.record']) {
+          wx.authorize({
+            scope: 'scope.record',
+            success () {
+              // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
+              wx.startRecord()
+            }
+          })
+        }
         if (res.authSetting['scope.userInfo']) {
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
           wx.getUserInfo({
@@ -57,6 +79,7 @@ App({
     
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    userOpenId:""
   }
 })

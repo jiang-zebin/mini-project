@@ -4,14 +4,36 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    heroList:[],
+    skinList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    wx.request({
+      url:"http://127.0.0.1:3000/loginMini/herolist",
+      success:(res)=>{
+        var row = [];
+        var index = Math.floor(Math.random()*(res.data.length-3));
+        row=res.data.slice(index,index+3);
+        this.setData({
+          heroList:row
+        })
+      }
+    })
+    wx.request({
+      url:"http://127.0.0.1:3000/loginMini/skinlist",
+      success:(res)=>{
+        var row = [];
+        var index = Math.floor(Math.random()*(res.data.length-3));
+        row=res.data.slice(index,index+3);
+        this.setData({
+          skinList:row
+        })
+      }
+    })
   },
 
   /**

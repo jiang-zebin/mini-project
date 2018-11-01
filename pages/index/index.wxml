@@ -3,17 +3,10 @@
   <image src="/assets/icon/search_icon@2x.png" mode="aspectFill" class="search-icon"/>
 </view>
 <swiper previous-margin="50rpx" next-margin="50rpx" circular="{{true}}" autoplay interval="4000" duration="700" indicator-dots="{{true}}" indicator-color="#666" indicator-active-color="white" class="shop-swiper">
-  <swiper-item class="swiper-item">
-    <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157001.jpg" mode="aspectFill" lazy-load/>
-  </swiper-item>
-  <swiper-item class="swiper-item">
-    <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157002.jpg" mode="aspectFill" lazy-load/>
-  </swiper-item>
-  <swiper-item class="swiper-item">
-    <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157003.jpg" mode="aspectFill" lazy-load/>
-  </swiper-item>
-  <swiper-item class="swiper-item">
-    <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157009.jpg" mode="aspectFill" lazy-load/>
+  <swiper-item class="swiper-item" wx:for="{{bannerList}}" wx:key="{{index}}">
+    <navigator url="{{'/pages/detail/detail?pid='+item.productId}}">
+      <image src="{{item.img_url}}" mode="aspectFill" lazy-load/>
+    </navigator>
   </swiper-item>
 </swiper>
 <view class="product-nav">
@@ -41,30 +34,30 @@
 <view class="underline"></view>
 <view class="box-title arrow">最新上架</view>
 <view class="news-box">
-  <navigator class="news-left" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big92003.jpg" mode="aspectFill" lazy-load/>
+  <navigator class="news-left" url="{{'/pages/detail/detail?pid='+newList[0].pid}}">
+    <image src="{{newList[0].img_url}}" mode="aspectFill" lazy-load/>
     <view class="left-info">
       <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load/>
-      <text>9900</text>
+      <text>{{newList[0].price}}</text>
     </view>
-    <view class="left-info-title">兔女郎 锐雯</view>
+    <view class="left-info-title">{{newList[0].pname}}</view>
   </navigator>
   <view class="news-right">
-    <navigator class="right-up" url="{{'/pages/detail/detail?id='+item.id}}">
-      <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big92004.jpg" mode="aspectFill" lazy-load/>
+    <navigator class="right-up" url="{{'/pages/detail/detail?pid='+newList[1].pid}}">
+      <image src="{{newList[1].img_url}}" mode="aspectFill" lazy-load/>
       <view class="right-info">
         <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load/>
-        <text>12900</text>
+        <text>{{newList[1].price}}</text>
       </view>
-      <view class="right-info-title">冠军之刃 锐雯</view>
+      <view class="right-info-title">{{newList[1].pname}}</view>
     </navigator>
-    <navigator class="right-down" url="{{'/pages/detail/detail?id='+item.id}}">
-      <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big238001.jpg" mode="aspectFill" lazy-load/>
+    <navigator class="right-down" url="{{'/pages/detail/detail?pid='+newList[2].pid}}">
+      <image src="{{newList[2].img_url}}" mode="aspectFill" lazy-load/>
       <view class="right-info">
         <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load/>
-        <text>6900</text>
+        <text>{{newList[2].price}}</text>
       </view>
-      <view class="right-info-title">冲击之刃 劫</view>
+      <view class="right-info-title">{{newList[2].pname}}</view>
     </navigator>
   </view>
 </view>

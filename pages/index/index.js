@@ -5,7 +5,9 @@ Page({
    */
   data: {
     heroList:[],
-    skinList:[]
+    skinList:[],
+    bannerList:[],
+    newList:[]
   },
 
   /**
@@ -29,8 +31,21 @@ Page({
         var row = [];
         var index = Math.floor(Math.random()*(res.data.length-3));
         row=res.data.slice(index,index+3);
+        var news = [];
+        news.push(res.data[11])
+        news.push(res.data[10])
+        news.push(res.data[12])
         this.setData({
-          skinList:row
+          skinList:row,
+          newList:news
+        })
+      }
+    })
+    wx.request({
+      url:"http://127.0.0.1:3000/loginMini/bannerlist",
+      success:(res)=>{
+        this.setData({
+          bannerList:res.data
         })
       }
     })

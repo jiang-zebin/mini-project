@@ -4,7 +4,7 @@
 </view>
 <swiper previous-margin="50rpx" next-margin="50rpx" circular="{{true}}" autoplay interval="4000" duration="700" indicator-dots="{{true}}" indicator-color="#666" indicator-active-color="white" class="shop-swiper">
   <swiper-item class="swiper-item" wx:for="{{bannerList}}" wx:key="{{index}}">
-    <navigator url="{{'/pages/detail/detail?pid='+item.productId}}">
+    <navigator url="{{'/pages/detail/detail?pid='+item.productId+'&hero_type='+item.hero_type}}">
       <image src="{{item.img_url}}" mode="aspectFill" lazy-load/>
     </navigator>
   </swiper-item>
@@ -34,7 +34,7 @@
 <view class="underline"></view>
 <view class="box-title arrow">最新上架</view>
 <view class="news-box">
-  <navigator class="news-left" url="{{'/pages/detail/detail?pid='+newList[0].pid}}">
+  <navigator class="news-left" url="{{'/pages/detail/detail?pid='+newList[0].pid+'&hero_type='+newList[0].hero_type}}">
     <image src="{{newList[0].img_url}}" mode="aspectFill" lazy-load/>
     <view class="left-info">
       <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load/>
@@ -43,7 +43,7 @@
     <view class="left-info-title">{{newList[0].pname}}</view>
   </navigator>
   <view class="news-right">
-    <navigator class="right-up" url="{{'/pages/detail/detail?pid='+newList[1].pid}}">
+    <navigator class="right-up" url="{{'/pages/detail/detail?pid='+newList[1].pid+'&hero_type='+newList[1].hero_type}}">
       <image src="{{newList[1].img_url}}" mode="aspectFill" lazy-load/>
       <view class="right-info">
         <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load/>
@@ -51,7 +51,7 @@
       </view>
       <view class="right-info-title">{{newList[1].pname}}</view>
     </navigator>
-    <navigator class="right-down" url="{{'/pages/detail/detail?pid='+newList[2].pid}}">
+    <navigator class="right-down" url="{{'/pages/detail/detail?pid='+newList[2].pid+'&hero_type='+newList[2].hero_type}}">
       <image src="{{newList[2].img_url}}" mode="aspectFill" lazy-load/>
       <view class="right-info">
         <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load/>
@@ -64,7 +64,7 @@
 <view class="underline"></view>
 <view class="box-title arrow">推荐英雄</view>
 <view class="recom-box">
-  <navigator wx:for="{{heroList}}" class="recom-item" url="{{'/pages/detail/detail?pid='+item.pid}}" wx:key="{{index}}">
+  <navigator wx:for="{{heroList}}" class="recom-item" url="{{'/pages/detail/detail?pid='+item.pid+'&hero_type='+item.hero_type}}" wx:key="{{index}}">
     <image src="{{item.img_url}}" mode="aspectFill" lazy-load/>
     <view class="recom-info">
       <text class="recom-title">{{item.pname}}</text>
@@ -80,7 +80,7 @@
 <view class="underline"></view>
 <view class="box-title arrow">推荐皮肤</view>
 <view class="recom-box">
-  <navigator wx:for="{{skinList}}" class="recom-item" url="{{'/pages/detail/detail?pid='+item.pid}}" wx:key="{{index}}">
+  <navigator wx:for="{{skinList}}" class="recom-item" url="{{'/pages/detail/detail?pid='+item.pid+'&hero_type='+item.hero_type}}" wx:key="{{index}}">
     <image src="{{item.img_url}}" mode="aspectFill" lazy-load/>
     <view class="recom-info">
       <text class="recom-title">{{item.pname}}</text>

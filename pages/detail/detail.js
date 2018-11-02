@@ -5,14 +5,43 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    product:null,
+    rmb:'',
+    heroList:[],
+    skinList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options)
+    wx.request({
+      url:"http://127.0.0.1:3000/loginMini/detail?pid="+options.pid,
+      success:(res)=>{
+        this.setData({
+          product:res.data[0],
+          rmb:(parseInt(res.data[0].price)/100).toFixed(2)
+        })
+      }
+    })
+    wx.request({
+      url:"http://127.0.0.1:3000/loginMini/tips?hero_type="+options.hero_type,
+      success:(res)=>{
+        var rowhero = [];
+        var rowskin = [];
+        for(var i=0;i<res.data.length;i++){
+          if(res.data[i].type=="hero"){
+            rowhero.push(res.data[i])
+          }else{
+            rowskin.push(res.data[i])
+          }
+        }
+        this.setData({
+          heroList:rowhero,
+          skinList:rowskin
+        })
+      }
+    })
   },
 
   /**

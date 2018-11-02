@@ -1,115 +1,33 @@
 <view class="product-nav">
-  <view class="active">英雄</view>
-  <view>皮肤</view>
+  <view class="active" data-type="hero">英雄</view>
+  <view data-type="skin">皮肤</view>
   <view>守卫/图标</view>
   <view>礼包</view>
 </view>
 <view class="product-list">
-  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big92000.jpg" mode="aspectFill" lazy-load/>
+  <navigator wx:for="{{heroList}}" wx:key="{{index}}" class="product-item" url="{{'/pages/detail/detail?pid='+item.pid}}">
+    <image class="product-img" src="{{item.img_url}}" mode="aspectFill" lazy-load/>
     <view class="product-title">
-      <text>放逐之刃 锐雯</text>
+      <text>{{item.pname}}</text>
       <view class="product-price">
         <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
-        <text>4500</text>
+        <text>{{item.price}}</text>
         <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
-        <text>6300</text>
+        <text>{{item.game_currency}}</text>
       </view>
     </view>
   </navigator>
-  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157000.jpg" mode="aspectFill" lazy-load/>
+</view>
+<view class="product-list">
+  <navigator wx:for="{{heroList}}" wx:key="{{index}}" class="product-item" url="{{'/pages/detail/detail?pid='+item.pid}}">
+    <image class="product-img" src="{{item.img_url}}" mode="aspectFill" lazy-load/>
     <view class="product-title">
-      <text>疾风剑豪 亚索</text>
+      <text>{{item.pname}}</text>
       <view class="product-price">
         <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
-        <text>4500</text>
+        <text>{{item.price}}</text>
         <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
-        <text>6300</text>
-      </view>
-    </view>
-  </navigator>
-  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big238000.jpg" mode="aspectFill" lazy-load/>
-    <view class="product-title">
-      <text>影流之主 劫</text>
-      <view class="product-price">
-        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
-        <text>4500</text>
-        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
-        <text>6300</text>
-      </view>
-    </view>
-  </navigator>
-  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big92000.jpg" mode="aspectFill" lazy-load/>
-    <view class="product-title">
-      <text>放逐之刃 锐雯</text>
-      <view class="product-price">
-        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
-        <text>4500</text>
-        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
-        <text>6300</text>
-      </view>
-    </view>
-  </navigator>
-  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157000.jpg" mode="aspectFill" lazy-load/>
-    <view class="product-title">
-      <text>疾风剑豪 亚索</text>
-      <view class="product-price">
-        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
-        <text>4500</text>
-        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
-        <text>6300</text>
-      </view>
-    </view>
-  </navigator>
-  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big238000.jpg" mode="aspectFill" lazy-load/>
-    <view class="product-title">
-      <text>影流之主 劫</text>
-      <view class="product-price">
-        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
-        <text>4500</text>
-        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
-        <text>6300</text>
-      </view>
-    </view>
-  </navigator>
-  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big92000.jpg" mode="aspectFill" lazy-load/>
-    <view class="product-title">
-      <text>放逐之刃 锐雯</text>
-      <view class="product-price">
-        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
-        <text>4500</text>
-        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
-        <text>6300</text>
-      </view>
-    </view>
-  </navigator>
-  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157000.jpg" mode="aspectFill" lazy-load/>
-    <view class="product-title">
-      <text>疾风剑豪 亚索</text>
-      <view class="product-price">
-        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
-        <text>4500</text>
-        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
-        <text>6300</text>
-      </view>
-    </view>
-  </navigator>
-  <navigator class="product-item" url="{{'/pages/detail/detail?id='+item.id}}">
-    <image class="product-img" src="http://ossweb-img.qq.com/images/lol/web201310/skin/big238000.jpg" mode="aspectFill" lazy-load/>
-    <view class="product-title">
-      <text>影流之主 劫</text>
-      <view class="product-price">
-        <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
-        <text>4500</text>
-        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
-        <text>6300</text>
+        <text>{{item.game_currency}}</text>
       </view>
     </view>
   </navigator>

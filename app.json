@@ -6,8 +6,8 @@
     "pages/settings/settings",
     "pages/profile/profile",
     "pages/info/info",
-    "pages/cart/cart"
-    
+    "pages/cart/cart",
+    "pages/skin/skin"
   ],
   "window": {
     "backgroundTextStyle": "light",

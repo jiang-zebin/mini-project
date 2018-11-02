@@ -1,17 +1,17 @@
 <view class="detail-bg">
-  <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157003.jpg" mode="aspectFill" lazy-load/>
+  <image src="{{product.img_url}}" mode="aspectFill" lazy-load/>
 </view>
 <view class="detail-info">
-  <view class="detail-title">腥红之月 亚索</view>
+  <view class="detail-title">{{product.pname}}</view>
   <view class="detail-subtitle">
     <view class="info-left">
       <view class="left-up">
         <image src="/assets/icon/mobile_store_price_white@2x.png" mode="aspectFill" lazy-load/>
-        <text>7900</text>
+        <text>{{product.price}}</text>
         <image src="/assets/icon/mobile_store_rmb_white@2x.png" mode="aspectFill" lazy-load/>
-        <text>79.00</text>
+        <text>{{rmb}}</text>
       </view>
-      <view class="left-down">上架时间:2018.10.24</view>
+      <view class="left-down">上架时间:{{product.sale_time}}</view>
     </view>
     <view class="info-right">
       <image src="/assets/icon/personal_guest_unsubscribe_nav_right@2x.png" mode="aspectFill" lazy-load/>
@@ -24,95 +24,35 @@
     <view class="tips-line"></view>
   </view>
   <view class="recom-box">
-    <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
-      <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big92000.jpg" mode="aspectFill" lazy-load/>
+    <navigator wx:for="{{heroList}}" wx:key="{{index}}" class="recom-item" url="{{'/pages/detail/detail?pid='+item.pid+'&hero_type='+item.hero_type}}">
+      <image src="{{item.img_url}}" mode="aspectFill" lazy-load/>
       <view class="recom-tips">
         <image src="/assets/icon/mobile_store_hero_angle_bg@2x.png" mode="aspectFill" lazy-load />
         <text>英雄</text>
       </view>
       <view class="recom-info">
-        <text class="recom-title">放逐之刃 锐雯</text>
+        <text class="recom-title">{{item.pname}}</text>
         <view class="recom-price">
           <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
-          <text>4500</text>
+          <text>{{item.price}}</text>
           <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
-          <text>6300</text>
-        </view>
-      </view>
-    </navigator>
-    <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
-      <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157000.jpg" mode="aspectFill" lazy-load/>
-      <view class="recom-tips">
-        <image src="/assets/icon/mobile_store_hero_angle_bg@2x.png" mode="aspectFill" lazy-load />
-        <text>英雄</text>
-      </view>
-      <view class="recom-info">
-        <text class="recom-title">疾风剑豪 亚索</text>
-        <view class="recom-price">
-          <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
-          <text>4500</text>
-          <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
-          <text>6300</text>
-        </view>
-      </view>
-    </navigator>
-    <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
-      <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big238000.jpg" mode="aspectFill" lazy-load/>
-      <view class="recom-tips">
-        <image src="/assets/icon/mobile_store_hero_angle_bg@2x.png" mode="aspectFill" lazy-load />
-        <text>英雄</text>
-      </view>
-      <view class="recom-info">
-        <text class="recom-title">影流之主 劫</text>
-        <view class="recom-price">
-          <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
-          <text>4500</text>
-          <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
-          <text>6300</text>
+          <text>{{item.game_currency}}</text>
         </view>
       </view>
     </navigator>
   </view>
   <view class="recom-box">
-    <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
-      <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big92016.jpg" mode="aspectFill" lazy-load/>
+    <navigator wx:for="{{skinList}}" wx:key="{{index}}" class="recom-item" url="{{'/pages/detail/detail?pid='+item.pid+'&hero_type='+item.hero_type}}">
+      <image src="{{item.img_url}}" mode="aspectFill" lazy-load/>
       <view class="recom-tips">
         <image src="/assets/icon/mobile_store_discount_icon@2x.png" mode="aspectFill" lazy-load />
         <text>皮肤</text>
       </view>
       <view class="recom-info">
-        <text class="recom-title">黎明使者 锐雯</text>
+        <text class="recom-title">{{item.pname}}</text>
         <view class="recom-price">
           <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
-          <text>9900</text>
-        </view>
-      </view>
-    </navigator>
-    <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
-      <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big157009.jpg" mode="aspectFill" lazy-load/>
-      <view class="recom-tips">
-        <image src="/assets/icon/mobile_store_discount_icon@2x.png" mode="aspectFill" lazy-load />
-        <text>皮肤</text>
-      </view>
-      <view class="recom-info">
-        <text class="recom-title">黑夜使者 亚索</text>
-        <view class="recom-price">
-          <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
-          <text>9900</text>
-        </view>
-      </view>
-    </navigator>
-    <navigator class="recom-item" url="{{'/pages/detail/detail?id='+item.id}}">
-      <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big238010.jpg" mode="aspectFill" lazy-load/>
-      <view class="recom-tips">
-        <image src="/assets/icon/mobile_store_discount_icon@2x.png" mode="aspectFill" lazy-load />
-        <text>皮肤</text>
-      </view>
-      <view class="recom-info">
-        <text class="recom-title">冠军之影 劫</text>
-        <view class="recom-price">
-          <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
-          <text>6900</text>
+          <text>{{item.price}}</text>
         </view>
       </view>
     </navigator>

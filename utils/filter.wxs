@@ -1,0 +1,25 @@
+function heroTypeChinese(value){
+  var arr = value.split(' ');
+  var res = [];
+  for(var i = 1;i < arr.length;i++){
+    if(arr[i]=='Fighter'){
+      arr[i] = '战士';
+    } else if (arr[i] == 'Mage'){
+      arr[i] = '法师';
+    } else if (arr[i] == 'Assassin') {
+      arr[i] = '刺客';
+    } else if (arr[i] == 'Marksman') {
+      arr[i] = '射手';
+    } else if (arr[i] == 'Tank') {
+      arr[i] = '坦克';
+    } else{
+      arr[i] = '辅助';
+    }
+    res.push(arr[i])
+    var str=res.join("/")
+  }
+  return str;
+}
+module.exports={
+  heroTypeChinese:heroTypeChinese
+}

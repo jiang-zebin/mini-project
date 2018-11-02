@@ -9,16 +9,31 @@ Page({
     skinList:[],
     type:"hero"
   },
-
+  changeType(e){
+    this.setData({
+      type:e.target.dataset.type
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setData({
+      type:options.type
+    })
     wx.request({
       url:"http://127.0.0.1:3000/loginMini/herolist",
       success:(res)=>{
         this.setData({
           heroList:res.data
+        })
+      }
+    })
+    wx.request({
+      url:"http://127.0.0.1:3000/loginMini/skinlist",
+      success:(res)=>{
+        this.setData({
+          skinList:res.data
         })
       }
     })

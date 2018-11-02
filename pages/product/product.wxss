@@ -11,8 +11,9 @@
   z-index:10;
   font-size:16px;
 }
-.product-list.active{
-
+.product-nav view{
+  width:20%;
+  text-align:center;
 }
 .product-list{
   display:flex;
@@ -68,4 +69,19 @@
 .product-price text{
   font-size:15px;
   color:#E2D0AB;
+}
+.not-found{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-top:400rpx;
+}
+.not-found image{
+  width:189rpx;
+  height:275rpx;
+}
+.not-found text{
+  font-size:18px;
+  color:#666;
 }

@@ -89,7 +89,7 @@ page{
 .active::after{
   display:block;
   content:"";
-  width:50%;
+  width:10%;
   height:4rpx;
   background-color:#0E9899;
   margin:0 auto;

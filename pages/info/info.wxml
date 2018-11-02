@@ -1,1 +1,37 @@
-<!--pages/info/info.wxml-->
+<wxs module="filter" src="../../utils/filter.wxs"></wxs>
+<input type="text" placeholder="搜索你要了解的英雄"/>
+<view class="type-box" bindtap="changeType">
+  <view class="hero-type">
+    <text class="{{type=='hero'?'select':''}}" data-type="hero">英雄类型</text>
+    <image wx:if="{{!type||type=='price'}}" src="/assets/icon/hero_circle_tab_bar_unselected@2x.png" mode="aspectFill" lazy-load/>
+    <image wx:if="{{type=='hero'}}" src="/assets/icon/hero_circle_tab_bar_selected@2x.png" mode="aspectFill" lazy-load/>
+  </view>
+  <view class="price-type">
+    <text class="{{type=='price'?'select':''}}" data-type="price">价格排序</text>
+    <image wx:if="{{!type||type=='hero'}}" src="/assets/icon/hero_circle_tab_bar_unselected@2x.png" mode="aspectFill" lazy-load/>
+    <image wx:if="{{type=='price'}}" src="/assets/icon/hero_circle_tab_bar_selected@2x.png" mode="aspectFill" lazy-load/>
+  </view>
+</view>
+<view class="{{'hero-box '+(type=='hero'?'select':'')}}" bindtap="selectHero">
+  <view class="{{selectHero=='All'?'select':''}}" data-hero="All">所有英雄</view>
+  <view class="{{selectHero=='Fighter'?'select':''}}" data-hero="Fighter">战士</view>
+  <view class="{{selectHero=='Assassin'?'select':''}}" data-hero="Assassin">刺客</view>
+  <view class="{{selectHero=='Mage'?'select':''}}" data-hero="Mage">法师</view>
+  <view class="{{selectHero=='Marksman'?'select':''}}" data-hero="Marksman">射手</view>
+  <view class="{{selectHero=='Tank'?'select':''}}" data-hero="Tank">坦克</view>
+  <view class="{{selectHero=='Support'?'select':''}}" data-hero="Support">辅助</view>
+</view>
+<view class="{{'price-box '+(type=='price'?'select':'')}}" bindtap="selectPrice">
+  <view class="{{selectPrice=='up'?'select':''}}" data-price="up">按低到高</view>
+  <view class="{{selectPrice=='down'?'select':''}}" data-price="down">按高到低</view>
+</view>
+<view class="hero-list">
+  <view class="list-item" wx:for="{{heroList}}" wx:key="{{index}}">
+    <image src="{{item.hero_avatar}}" mode="aspectFill" lazy-load/>
+    <view class="item-info">
+      <text>{{item.hname}}</text>
+      <text>{{item.real_name_cn}}</text>
+      <text>{{filter.heroTypeChinese(item.hero_type)}}</text>
+    </view>
+  </view>
+</view>

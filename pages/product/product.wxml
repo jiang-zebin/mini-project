@@ -1,10 +1,11 @@
-<view class="product-nav">
-  <view class="active" data-type="hero">英雄</view>
-  <view data-type="skin">皮肤</view>
-  <view>守卫/图标</view>
-  <view>礼包</view>
+<view class="product-nav" bindtap="changeType">
+  <view class="{{type=='hero'?'active':''}}" data-type="hero">英雄</view>
+  <view class="{{type=='skin'?'active':''}}" data-type="skin">皮肤</view>
+  <view class="{{type=='avatar'?'active':''}}" data-type="avatar">守卫/图标</view>
+  <view class="{{type=='presents'?'active':''}}" data-type="presents">礼包</view>
+  <view class="{{type=='toy'?'active':''}}" data-type="toy">周边</view>
 </view>
-<view class="product-list">
+<view class="product-list" wx:if="{{type=='hero'}}">
   <navigator wx:for="{{heroList}}" wx:key="{{index}}" class="product-item" url="{{'/pages/detail/detail?pid='+item.pid}}">
     <image class="product-img" src="{{item.img_url}}" mode="aspectFill" lazy-load/>
     <view class="product-title">
@@ -12,23 +13,35 @@
       <view class="product-price">
         <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
         <text>{{item.price}}</text>
-        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
-        <text>{{item.game_currency}}</text>
+        <image wx:if="{{type=='hero'}}" src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+        <text wx:if="{{type=='hero'}}">{{item.game_currency}}</text>
       </view>
     </view>
   </navigator>
 </view>
-<view class="product-list">
-  <navigator wx:for="{{heroList}}" wx:key="{{index}}" class="product-item" url="{{'/pages/detail/detail?pid='+item.pid}}">
+<view class="product-list"  wx:elif="{{type=='skin'}}">
+  <navigator wx:for="{{skinList}}" wx:key="{{index}}" class="product-item" url="{{'/pages/detail/detail?pid='+item.pid}}">
     <image class="product-img" src="{{item.img_url}}" mode="aspectFill" lazy-load/>
     <view class="product-title">
       <text>{{item.pname}}</text>
       <view class="product-price">
         <image src="/assets/icon/mobile_store_price_color_three@2x.png" mode="aspectFill" lazy-load />
         <text>{{item.price}}</text>
-        <image src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
-        <text>{{item.game_currency}}</text>
+        <image wx:if="{{type=='hero'}}" src="/assets/icon/moblie_store_blue_essence_dark@2x.png" mode="aspectFill" lazy-load />
+        <text wx:if="{{type=='hero'}}">{{item.game_currency}}</text>
       </view>
     </view>
   </navigator>
+</view>
+<view class="not-found" wx:elif="{{type=='avatar'}}">
+  <image src="/assets/icon/player_empty@2x.png" mode="aspectFill" lazy-load/>
+  <text>页面正在修建中~~</text>
+</view>
+<view class="not-found" wx:elif="{{type=='present'}}">
+  <image src="/assets/icon/player_empty@2x.png" mode="aspectFill" lazy-load/>
+  <text>页面正在修建中~~</text>
+</view>
+<view class="not-found" wx:else>
+  <image src="/assets/icon/player_empty@2x.png" mode="aspectFill" lazy-load/>
+  <text>页面正在修建中~~</text>
 </view>

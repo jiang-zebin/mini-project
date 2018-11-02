@@ -5,14 +5,46 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    type:'',
+    selectHero:'All',
+    selectPrice:'',
+    heroList:[]
   },
-
+  changeType(e){
+    if(this.data.type==e.target.dataset.type){
+      var type=''
+    }else{
+      var type=e.target.dataset.type
+    }
+    this.setData({
+      type:type
+    })
+  },
+  selectHero(e){
+    this.setData({
+      selectHero:e.target.dataset.hero
+    })
+  },
+  selectPrice(e){
+    this.setData({
+      selectPrice:e.target.dataset.price
+    })
+  },
+  getList(){
+    wx.request({
+      url:"http://127.0.0.1:3000/hero/type?hero_type="+this.data.selectHero,
+      success:(res)=>{
+        this.setData({
+          heroList:res.data
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getList()
   },
 
   /**

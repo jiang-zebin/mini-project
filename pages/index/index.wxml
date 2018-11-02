@@ -10,23 +10,23 @@
   </swiper-item>
 </swiper>
 <view class="product-nav">
-  <navigator class="product-item" url="{{'/pages/product/product?type='+item.type}}">
+  <navigator class="product-item" url="/pages/product/product?type=hero">
     <image src="/assets/icon/mobile_store_func_hero_mark@2x.png" mode="aspectFill" lazy-load/>
     <text>英雄</text>
   </navigator>
-  <navigator class="product-item" url="{{'/pages/product/product?type='+item.type}}">
+  <navigator class="product-item" url="/pages/product/product?type=skin">
     <image src="/assets/icon/mobile_store_func_skin_mark@2x.png" mode="aspectFill" lazy-load/>
     <text>皮肤</text>
   </navigator>
-  <navigator class="product-item" url="{{'/pages/product/product?type='+item.type}}">
+  <navigator class="product-item" url="/pages/product/product?type=avatar">
     <image src="/assets/icon/mobile_store_func_guard_mark@2x.png" mode="aspectFill" lazy-load/>
     <text>守卫/图标</text>
   </navigator>
-  <navigator class="product-item" url="{{'/pages/product/product?type='+item.type}}">
+  <navigator class="product-item" url="/pages/product/product?type=present">
     <image src="/assets/icon/mobile_store_func_gift_mark@2x.png" mode="aspectFill" lazy-load/>
     <text>礼包</text>
   </navigator>
-  <navigator class="product-item" url="{{'/pages/product/product?type='+item.type}}">
+  <navigator class="product-item" url="/pages/product/product?type=toy">
     <image src="/assets/icon/mobile_store_func_periphery@2x.png" mode="aspectFill" lazy-load/>
     <text>周边</text>
   </navigator>

@@ -24,15 +24,17 @@ Page({
     this.setData({
       selectHero:e.target.dataset.hero
     })
+    this.getList()
   },
   selectPrice(e){
     this.setData({
       selectPrice:e.target.dataset.price
     })
+    this.getList();
   },
   getList(){
     wx.request({
-      url:"http://127.0.0.1:3000/hero/type?hero_type="+this.data.selectHero,
+      url:"http://127.0.0.1:3000/hero/type?hero_type="+this.data.selectHero+"&price="+this.data.selectPrice,
       success:(res)=>{
         this.setData({
           heroList:res.data

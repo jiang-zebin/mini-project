@@ -18,7 +18,12 @@ Page({
     wx.request({
       url:"http://127.0.0.1:3000/loginMini/getcart?id="+app.globalData.userId,
       success:(res)=>{
-        
+        for(var i=0;i<res.data.length;i++){
+          res.data[i].checked=false;
+        }
+        this.setData({
+          cartlist:res.data
+        })
       }
     })
   },
@@ -30,9 +35,9 @@ Page({
   },
   //购物车列表项被选中时触发
   selectOne:function(e){
-    var index=e.target.dataset.id-1;
-    this.data.cartlist[index].check=!this.data.cartlist[index].check;
-    if(this.data.cartlist[index].check){
+    var index=e.target.dataset.id;
+    this.data.cartlist[index].checked=!this.data.cartlist[index].checked;
+    if(this.data.cartlist[index].checked){
       this.data.priceAll+=parseInt(this.data.cartlist[index].price);
       this.data.rmbAll=parseInt(this.data.rmbAll)+parseInt(this.data.cartlist[index].rmb);
       this.data.count+=1;
@@ -43,7 +48,7 @@ Page({
     }
     var sum=0;
     for(var i=0;i<this.data.cartlist.length;i++){
-      sum+=this.data.cartlist[i].price
+      sum+=parseInt(this.data.cartlist[i].price);
     }
     if(this.data.priceAll==sum){
       this.data.checkAll=true;
@@ -63,15 +68,15 @@ Page({
     var sum=0;
     if(this.data.checkAll==false){
       for(var i=0;i<this.data.cartlist.length;i++){
-        sum+=this.data.cartlist[i].price;
-        this.data.cartlist[i].check=true;
+        sum+=parseInt(this.data.cartlist[i].price);
+        this.data.cartlist[i].checked=true;
         this.data.priceAll=parseInt(sum);
         this.data.rmbAll=(parseInt(sum)/100).toFixed(2);
       }
       this.data.count=this.data.cartlist.length;
     }else{
       for(var i=0;i<this.data.cartlist.length;i++){
-        this.data.cartlist[i].check=false;
+        this.data.cartlist[i].checked=false;
       }
       this.data.priceAll=0;
       this.data.rmbAll=0;
@@ -89,7 +94,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getCartList()
+    
   },
 
   /**
@@ -103,7 +109,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.getCartList()
   },
 
   /**

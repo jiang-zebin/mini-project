@@ -20,6 +20,7 @@ function heroTypeChinese(value){
   }
   return str;
 }
+
 module.exports={
   heroTypeChinese:heroTypeChinese
 }

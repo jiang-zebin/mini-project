@@ -1,5 +1,7 @@
 .search-box{
-  position:relative;
+  position:fixed;
+  top:0;
+  width:100%;
 }
 .search-input{
   border-radius:10rpx;
@@ -13,8 +15,11 @@
   position:absolute;
   width:30rpx;
   height:30rpx;
-  top:8rpx;
+  top:16rpx;
   left:25rpx;
+}
+.shop-swiper{
+  margin-top:72rpx;
 }
 .shop-swiper,.swiper-item{
   width:100%;

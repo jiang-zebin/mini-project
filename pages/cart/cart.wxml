@@ -6,6 +6,10 @@
     </view>
   </picker>
 </view>
+<view class="not-found" wx:if="{{cartlist.length==0}}">
+  <image src="/assets/icon/player_empty@2x.png" mode="aspectFill" lazy-load/>
+  <text>购物车空空如也~~</text>
+</view>
 <view class="cart-item" wx:for="{{cartlist}}" wx:key="{{index}}">
   <image class="select" wx:if="{{!item.check}}" data-id="{{item.cid}}" bindtap="selectOne" src="/assets/icon/batch_cancel_normal_unselected@2x.png" mode="aspectFill" lazy-load/>
   <image class="unselect" wx:else data-id="{{item.cid}}" bindtap="selectOne" src="/assets/icon/batch_cancel_normal_selected@2x.png" mode="aspectFill" lazy-load/>

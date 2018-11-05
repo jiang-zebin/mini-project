@@ -11,6 +11,21 @@ page{
   font-size:16px;
   color:#aaa;
 }
+.not-found{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-top:400rpx;
+}
+.not-found image{
+  width:189rpx;
+  height:275rpx;
+}
+.not-found text{
+  font-size:18px;
+  color:#666;
+}
 .cart-item{
   display:flex;
   align-items:center;

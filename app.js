@@ -16,10 +16,11 @@ App({
           wx.request({
             url: 'https://api.weixin.qq.com/sns/jscode2session?appid=wxd3bdce890ffdd911&secret=a022580f863276b9f099ff33b9a08592&js_code=' + res.code + '&grant_type=authorization_code',
             success:(result)=>{
+              this.globalData.userId = result.data.openid
               wx.request({
                 url:"http://127.0.0.1:3000/loginMini?id="+result.data.openid,
                 success:(res)=>{
-                  console.log(res)
+                  
                 }
               })
             }
@@ -80,6 +81,7 @@ App({
   globalData: {
     userInfo: null,
     userdetail:null,
-    userCart:null
+    userCart:null,
+    userId:""
   }
 })

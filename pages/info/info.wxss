@@ -1,3 +1,10 @@
+.search-box{
+  position:fixed;
+  top:0;
+  background-color:#fff;
+  width:100%;
+  height:120rpx;
+}
 input{
   width:95%;
   margin:10rpx auto;
@@ -9,6 +16,7 @@ input{
 .type-box{
   display:flex;
   align-items:center;
+  width:100%;
   margin-bottom:10rpx;
 }
 .hero-type{
@@ -49,7 +57,8 @@ text.select{
   color:#DCB78A;
 }
 .hero-box{
-  position:absolute;
+  position:fixed;
+  top:120rpx;
   width:100%;
   display:flex;
   flex-wrap:wrap;
@@ -76,7 +85,8 @@ text.select{
   color:#fff;
 }
 .price-box{
-  position:absolute;
+  position:fixed;
+  top:120rpx;
   width:100%;
   display:flex;
   justify-content:center;
@@ -121,10 +131,10 @@ text.select{
 }
 .hero-list{
   display:flex;
-  /* justify-content:center; */
   align-items:center;
   flex-wrap:wrap;
   width:100%;
+  margin-top:100rpx;
   padding-left:50rpx;
 }
 .list-item{
@@ -147,15 +157,15 @@ text.select{
 }
 .item-info text:first-child{
   color:#5B6161;
-  font-size:16px;
+  font-size:15px;
   margin-bottom:5rpx;
 }
 .item-info text:nth-child(2){
   color:#69696B;
-  font-size:15px;
+  font-size:14px;
   margin-bottom:10rpx;
 }
 .item-info text:last-child{
   color:#AF8532;
-  font-size:14px;
+  font-size:13px;
 }

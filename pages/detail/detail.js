@@ -1,4 +1,5 @@
 // pages/detail/detail.js
+var app=getApp();
 Page({
 
   /**
@@ -8,13 +9,24 @@ Page({
     product:null,
     rmb:'',
     heroList:[],
-    skinList:[]
+    skinList:[],
+    pid:''
   },
-
+  addcart(){
+    wx.request({
+      url:"http://127.0.0.1:3000/loginMini/addcart?id="+app.globalData.userId+"&pid="+this.data.pid,
+      success:(res)=>{
+        console.log(res)
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setData({
+      pid:options.pid
+    })
     wx.request({
       url:"http://127.0.0.1:3000/loginMini/detail?pid="+options.pid,
       success:(res)=>{

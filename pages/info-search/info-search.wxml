@@ -1,0 +1,10 @@
+<wxs module="filter" src="../../utils/filter.wxs"></wxs>
+<input type="text" placeholder="请输入您要了解的英雄" bindinput="getName"/>
+<view class="list-item" wx:for="{{heroList}}" wx:key="{{index}}">
+  <image src="{{item.hero_avatar}}" mode="aspectFill" lazy-load/>
+  <view class="item-info">
+    <text>{{item.hname}}</text>
+    <text>{{item.real_name_cn}}</text>
+    <text>{{filter.heroTypeChinese(item.hero_type)}}</text>
+  </view>
+</view>

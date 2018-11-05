@@ -1,15 +1,17 @@
 <wxs module="filter" src="../../utils/filter.wxs"></wxs>
-<input type="text" placeholder="搜索你要了解的英雄"/>
-<view class="type-box" bindtap="changeType">
-  <view class="hero-type">
-    <text class="{{type=='hero'?'select':''}}" data-type="hero">英雄类型</text>
-    <image wx:if="{{!type||type=='price'}}" src="/assets/icon/hero_circle_tab_bar_unselected@2x.png" mode="aspectFill" lazy-load/>
-    <image wx:if="{{type=='hero'}}" src="/assets/icon/hero_circle_tab_bar_selected@2x.png" mode="aspectFill" lazy-load/>
-  </view>
-  <view class="price-type">
-    <text class="{{type=='price'?'select':''}}" data-type="price">价格排序</text>
-    <image wx:if="{{!type||type=='hero'}}" src="/assets/icon/hero_circle_tab_bar_unselected@2x.png" mode="aspectFill" lazy-load/>
-    <image wx:if="{{type=='price'}}" src="/assets/icon/hero_circle_tab_bar_selected@2x.png" mode="aspectFill" lazy-load/>
+<view class="search-box">
+  <input catchtap="infoSearch" type="text" placeholder="搜索你要了解的英雄"/>
+  <view class="type-box" bindtap="changeType">
+    <view class="hero-type">
+      <text class="{{type=='hero'?'select':''}}" data-type="hero">英雄类型</text>
+      <image wx:if="{{!type||type=='price'}}" src="/assets/icon/hero_circle_tab_bar_unselected@2x.png" mode="aspectFill" lazy-load/>
+      <image wx:if="{{type=='hero'}}" src="/assets/icon/hero_circle_tab_bar_selected@2x.png" mode="aspectFill" lazy-load/>
+    </view>
+    <view class="price-type">
+      <text class="{{type=='price'?'select':''}}" data-type="price">价格排序</text>
+      <image wx:if="{{!type||type=='hero'}}" src="/assets/icon/hero_circle_tab_bar_unselected@2x.png" mode="aspectFill" lazy-load/>
+      <image wx:if="{{type=='price'}}" src="/assets/icon/hero_circle_tab_bar_selected@2x.png" mode="aspectFill" lazy-load/>
+    </view>
   </view>
 </view>
 <view class="{{'hero-box '+(type=='hero'?'select':'')}}" bindtap="selectHero">

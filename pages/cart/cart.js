@@ -7,12 +7,7 @@ Page({
   data: {
     district:["艾欧尼亚","祖安","战争学院","雷瑟守备"],
     index:0,
-    cartlist:[
-      { cid: 1, img_url:"http://ossweb-img.qq.com/images/lol/web201310/skin/big92000.jpg",title:"放逐之刃 锐雯",price:4500,rmb:"45.00",check:false},
-      { cid: 2, img_url:"http://ossweb-img.qq.com/images/lol/web201310/skin/big157000.jpg",title:"疾风剑豪 亚索",price:4500,rmb:"45.00",check:false},
-      { cid: 3, img_url:"http://ossweb-img.qq.com/images/lol/web201310/skin/big238000.jpg",title:"影流之主 劫",price:4500,rmb:"45.00",check:false},
-      { cid: 4, img_url:"http://ossweb-img.qq.com/images/lol/web201310/skin/big92016.jpg",title:"黎明使者 锐雯",price:9900,rmb:"99.00",check:false}
-    ],
+    cartlist:[],
     checkAll:false,
     priceAll:0,
     rmbAll:0,

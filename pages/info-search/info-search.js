@@ -1,40 +1,16 @@
-// pages/info/info.js
+// pages/info-search/info-search.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    type:'',
-    selectHero:'All',
-    selectPrice:'',
+    heroName:'',
     heroList:[]
-  },
-  changeType(e){
-    if(this.data.type==e.target.dataset.type){
-      var type=''
-    }else{
-      var type=e.target.dataset.type
-    }
-    this.setData({
-      type:type
-    })
-  },
-  selectHero(e){
-    this.setData({
-      selectHero:e.target.dataset.hero
-    })
-    this.getList()
-  },
-  selectPrice(e){
-    this.setData({
-      selectPrice:e.target.dataset.price
-    })
-    this.getList();
   },
   getList(){
     wx.request({
-      url:"http://127.0.0.1:3000/hero/type?hero_type="+this.data.selectHero+"&price="+this.data.selectPrice,
+      url:"http://127.0.0.1:3000/hero/search?heroName="+this.data.heroName,
       success:(res)=>{
         this.setData({
           heroList:res.data
@@ -42,16 +18,17 @@ Page({
       }
     })
   },
-  infoSearch(){
-    wx.navigateTo({
-      url:'/pages/info-search/info-search'
+  getName(e){
+    this.setData({
+      heroName:e.detail.value
     })
+    this.getList()
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getList()
+
   },
 
   /**

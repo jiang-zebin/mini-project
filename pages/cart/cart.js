@@ -1,4 +1,5 @@
 // pages/cart/cart.js
+var app=getApp();
 Page({
 
   /**
@@ -12,6 +13,14 @@ Page({
     priceAll:0,
     rmbAll:0,
     count:0
+  },
+  getCartList(){
+    wx.request({
+      url:"http://127.0.0.1:3000/loginMini/getcart?id="+app.globalData.userId,
+      success:(res)=>{
+        
+      }
+    })
   },
   //选择大区
   districtChange:function(e){

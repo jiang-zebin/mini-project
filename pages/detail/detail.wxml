@@ -1,5 +1,8 @@
 <view class="detail-bg">
   <image src="{{product.img_url}}" mode="aspectFill" lazy-load/>
+  <view class="cart-btn" bindtap="toCart">
+    <image src="/assets/icon/mobile_store_continue_purchase@2x.png" mode="aspectFill" lazy-load/>
+  </view>
 </view>
 <view class="detail-info">
   <view class="detail-title">{{product.pname}}</view>

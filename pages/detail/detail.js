@@ -16,8 +16,19 @@ Page({
     wx.request({
       url:"http://127.0.0.1:3000/loginMini/addcart?id="+app.globalData.userId+"&pid="+this.data.pid,
       success:(res)=>{
-        console.log(res)
+        wx.showToast({
+          title:"添加成功",
+          duration:1500
+        })
+        setTimeout(()=>{
+          wx.hideToast()
+        },1500)
       }
+    })
+  },
+  toCart(){
+    wx.switchTab({
+      url:"/pages/cart/cart"
     })
   },
   /**

@@ -1,38 +1,44 @@
-// pages/product-search/product-search.js
+// pages/pay/pay.js
+var app=getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    heroList:[],
-    skinList:[]
+    buyList:[],
+    district:""
   },
-  searchProduct(e){
-    wx.request({
-      url:"http://127.0.0.1:3000/loginMini/pname?pname="+e.detail.value,
-      success:(res)=>{
-        var hero=[];
-        var skin=[];
-        for(var i = 0;i<res.data.length;i++){
-          if(res.data[i].type=="hero"){
-            hero=hero.concat(res.data[i])
-          }else{
-            skin=skin.concat(res.data[i])
-          }
-        }
-        this.setData({
-          heroList:hero,
-          skinList:skin
-        })
-      }
+  goToPay(){
+    wx.showLoading({
+      title: '支付中...',
     })
+    setTimeout(function () {
+      wx.hideLoading();
+      wx.showToast({
+        title:"支付成功"
+      })
+      setTimeout(()=>{
+        wx.hideToast();
+        wx.switchTab({
+          url:"/pages/index/index"
+        })
+      },1000)
+    }, 2000)
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.request({
+      url:"http://127.0.0.1:3000/loginMini/addbuylist?id="+app.globalData.userId+"&pids="+options.pids,
+      success:(res)=>{
+        this.setData({
+          buyList:res.data,
+          district:options.district
+        })
+      }
+    })
   },
 
   /**

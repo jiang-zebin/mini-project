@@ -1,0 +1,19 @@
+<view class="district-box">
+  <text>购买至</text>
+  <text>{{district}}</text>
+</view>
+<view class="cart-item" wx:for="{{buyList}}" wx:key="{{index}}">
+  <view class="item-info" url="{{'/pages/detail/detail?pid='+item.pid}}">
+    <image class="item-img" src="{{item.img_url}}" mode="aspectFill" lazy-load/>
+    <view class="item-detail">
+      <text class="item-title">{{item.pname}}</text>
+      <view class="item-price">
+        <image src="/assets/icon/mobile_store_price_color_one@2x.png" mode="aspectFill" lazy-load/>
+        <text>{{item.price}}</text>
+        <image src="/assets/icon/mobile_store_rmb_color_one@2x.png" mode="aspectFill" lazy-load/>
+        <text>{{item.rmb}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<button bindtap="goToPay">支付</button>

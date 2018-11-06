@@ -14,6 +14,45 @@ Page({
     rmbAll:0,
     count:0
   },
+  toPay(){
+    var pids = "";
+    for(var i = 0;i<this.data.cartlist.length;i++){
+      if(this.data.cartlist[i].checked){
+        pids+=this.data.cartlist[i].pid+" ";
+      }
+    }
+    wx.navigateTo({
+      url:'/pages/pay/pay?pids='+pids+"&district="+this.data.district[this.data.index]
+    })
+  },
+  deleteProduct(e){
+    var pid = e.target.dataset.pid;
+    wx.showModal({
+      title: '提示',
+      content: '确定要删除吗？',
+      success: (sm)=>{
+        if (sm.confirm) {
+          wx.request({
+            url:"http://127.0.0.1:3000/loginMini/delete?pid="+pid,
+            success:(res)=>{
+              if(res.data.code==200){
+                wx.showToast({
+                  title:"删除成功",
+                  duration:1500
+                })
+                setTimeout(()=>{
+                  wx.hideToast()
+                },1500)
+              }
+              this.getCartList()
+            }
+          })
+        } else if (sm.cancel) {
+          
+        }
+      }
+    })
+  },
   getCartList(){
     wx.request({
       url:"http://127.0.0.1:3000/loginMini/getcart?id="+app.globalData.userId,
@@ -95,7 +134,6 @@ Page({
    */
   onLoad: function (options) {
     this.getCartList()
-    
   },
 
   /**
@@ -110,6 +148,11 @@ Page({
    */
   onShow: function () {
     this.getCartList()
+    this.setData({
+      priceAll:0,
+      rmbAll:0,
+      count:0
+    })
   },
 
   /**

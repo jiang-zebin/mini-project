@@ -27,6 +27,7 @@ page{
   color:#666;
 }
 .cart-item{
+  position:relative;
   display:flex;
   align-items:center;
   background-color:#F6F7F9;
@@ -36,6 +37,13 @@ page{
 .select,.unselect{
   width:40rpx;
   height:40rpx;
+}
+.delete-btn{
+  position:absolute;
+  width:30rpx;
+  height:30rpx;
+  top:20rpx;
+  right:20rpx;
 }
 .item-info{
   display:flex;

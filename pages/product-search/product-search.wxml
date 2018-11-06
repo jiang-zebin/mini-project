@@ -1,3 +1,4 @@
+<input type="text" placeholder="请输入您要查询的商品" bindinput="searchProduct"/>
 <view class="recom-box">
   <navigator wx:for="{{heroList}}" wx:key="{{index}}" class="recom-item" url="{{'/pages/detail/detail?pid='+item.pid+'&hero_type='+item.hero_type}}">
     <image src="{{item.img_url}}" mode="aspectFill" lazy-load/>

@@ -1,1 +1,29 @@
-/* pages/product-search/product-search.wxss */
+input{
+  width:95%;
+  background-color:#eee;
+  border-radius:10rpx;
+  margin:10rpx auto;
+  font-size:14px;
+  padding-left:20rpx;
+}
+.recom-tips{
+  position:absolute;
+  width:70rpx;
+  height:32rpx;
+  top:0rpx;
+  left:0rpx;
+}
+.recom-tips image{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+.recom-tips text{
+  position:absolute;
+  font-size:12px;
+  color:#fff;
+  top:5rpx;
+  left:10rpx;
+}

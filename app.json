@@ -1,14 +1,15 @@
 {
   "pages": [
-    "pages/info/info",
     "pages/index/index",
+    "pages/info/info",
     "pages/product/product",
     "pages/detail/detail",
     "pages/settings/settings",
     "pages/profile/profile",
     "pages/cart/cart",
     "pages/product-search/product-search",
-    "pages/info-search/info-search"
+    "pages/info-search/info-search",
+    "pages/pay/pay"
   ],
   "window": {
     "backgroundTextStyle": "light",
